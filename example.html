@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZFIERIZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #000000;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a, nav button {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            background-color: #333;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        nav a:hover, nav button:hover {
+            text-decoration: underline;
+            background-color: #555;
+        }
+        section {
+            padding: 2rem;
+            background: white;
+            margin: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #000000;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .article-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+        }
+        .article-item {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .article-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+        }
+        .article-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ZFIERIZ - CHIMICA ANALITICA E ORGANICA</h1>
+</header>
+
+<nav>
+    <a href="#about">CHI SIAMO</a>
+    <a href="#articles">ARTICOLI DI CHIMICA</a>
+    <a href="#contact">CONTATTI</a>
+    <button onclick="window.location.href='newpage.html'">NUOVA PAGINA</button>
+</nav>
+
+<section id="about">
+    <h2>CHI SIAMO</h2>
+    <p>SIAMO UN SITO DEDICATO A CONTENUTI EDUCATIVI DI CHIMICA, CREATI PER AIUTARE LE PERSONE A COMPRENDERE I CONCETTI CHIAVE IN MODO SEMPLICE E CHIARO.</p>
+</section>
+
+<section id="articles">
+    <h2>ARTICOLI DI CHIMICA</h2>
+    <div class="article-list">
+        <div class="article-item">
+            <a href="articolo1.html">INTRODUZIONE ALLA CHIMICA</a>
+            <p>UN'INTRODUZIONE AI PRINCIPI DI BASE DELLA CHIMICA: ATOMI, MOLECOLE E LEGGI FONDAMENTALI.</p>
+        </div>
+        <div class="article-item">
+            <a href="articolo2.html">LA TAVOLA PERIODICA DEGLI ELEMENTI</a>
+            <p>ESPLORIAMO LA STRUTTURA DELLA TAVOLA PERIODICA E COME UTILIZZARLA PER PREVEDERE LE PROPRIETA DEGLI ELEMENTI</p>
+        </div>
+        <div class="article-item">
+            <a href="articolo3.html">LE REAZIONI CHIMICHE</a>
+            <p>UN'ANALISI DELLE REAZIONI CHIMICHE, DEI LORO TIPI E COME BILANCIARLI CORRETTAMENTE.</p>
+        </div>
+        <div class="article-item">
+            <a href="articolo4.html">LE REAZIONI DI COMBUSTIONE</a>
+            <p>DETTAGLI SU COME SI VERIFICANO LE REAZIONI DI COMBUSTIONE E I LORO PRODOTTI.</p>
+        </div>
+        <div class="article-item">
+            <a href="articolo5.html">LA LEGGE DELLA CONSERVAZIONE DELLA MASSA</a>
+            <p>UN'ANALISI DI QUESTA LEGGE FONDAMENTALE DELLA CHIMICA.</p>
+        </div>
+        <div class="article-item">
+            <a href="articolo6.html">GLI ISOTOPI E LA RADIOATTIVITÀ</a>
+            <p>CHE COSA SONO GLI ISOTOPI E COME FUNZIONA LA RADIOATTIVITÀ.</p>
+        </div>
+        <div class="article-item">
+            <a href="articolo7.html">LA CHIMICA DEI CARBOIDRATI</a>
+            <p>IL RUOLO DEI CARBOIDRATI NELLA CHIMICA ORGANICA E NEL NOSTRO CORPO.</p>
+        </div>
+        <div class="article-item">
+            <a href="articolo8.html">PROTEINE E ENZIMI: STRUTTURA E FUNZIONE</a>
+            <p>ANALISI DELLE PROTEINE E DEI LORO RUOLI BIOLOGICI.</p>
+        </div>
+        <div class="article-item">
+            <a href="articolo9.html">LE REAZIONI DI SINTESI</a>
+            <p>CHE COSA SONO LE REAZIONI DI SINTESI E COME SI FORMANO NUOVE SOSTANZE.</p>
+        </div>
+        <div class="article-item">
+            <a href="articolo10.html">GLI IDROCARBURI: COMPOSIZIONE E TIPI</a>
+            <p>DIFFERENZE TRA IDROCARBURI SATURI, INSATURI E AROMATICI.</p>
+        </div>
+        <!-- Aggiungi altri articoli seguendo lo stesso schema fino a 50 -->
+    </div>
+</section>
+
+<section id="contact">
+    <h2>CONTATTACI</h2>
+    <p>Email: zzfieriz@gmail.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Zfieriz - ALL RIGHTS RESERVED</p>
+</footer>
+
+</body>
+</html>
