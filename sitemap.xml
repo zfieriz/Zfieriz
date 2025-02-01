@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.zfieriz.com/</loc>
-    <lastmod>2025-02-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <loc>https://www.zfieriz.com/articolo1.html</loc>
+    <lastmod>2022-06-04</lastmod>
   </url>
-  <url>
-    <loc>https://www.zfieriz.com/pagina1</loc>
-    <lastmod>2025-02-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Aggiungi altre pagine qui -->
 </urlset>
