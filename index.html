@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free BMI CALCULATOR - CALCULATE your BODY Mass Index instantly with our easy-to-use tool. Includes comprehensive health information, BMI categories, and lifestyle recommendations.">
+    <meta name="keywords" content="BMI calculator, BODY mass index, health calculator, weight calculator, fitness tool, health assessment">
+    <meta name="author" content="BMI Health Calculator">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content=" ZFIERIZ BMI CALCULATOR - Free BODY Mass Index Tool">
+    <meta property="og:description" content="CALCULATE your BMI instantly and learn about healthy weight ranges, health risks, and lifestyle recommendations.">
+    <meta property="og:type" content="website">
+    <title> ZFIERIZ BMI CALCULATOR - Free BODY Mass Index Tool | Health Assessment</title>
+    
+    <!-- Schema Markup for Health Content -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "BMI Calculator",
+        "description": "Professional BMI calculator with comprehensive health information",
+        "mainEntity": {
+            "@type": "MedicalCalculator",
+            "name": "Body Mass Index Calculator",
+            "description": "Calculate BMI using height and weight measurements"
+        },
+        "medicalAudience": {
+            "@type": "MedicalAudience",
+            "audienceType": "Patient"
+        }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        /* Ensure all elements use Roboto */
+        *, *::before, *::after {
+            font-family: 'Roboto', sans-serif !important;
+        }
+
+        /* Container and Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #000 0%, #333 100%);
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* Calculator Section */
+        .calculator-section {
+            background: #fff;
+            border: none;
+            border-radius: 16px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .calculator-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #000 0%, #666 50%, #000 100%);
+        }
+
+        .calculator-title {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .unit-toggle {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .toggle-btn {
+            background: #fff;
+            border: 2px solid #000;
+            padding: 12px 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .toggle-btn.active {
+            background: #000;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .toggle-btn:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .toggle-btn:last-child {
+            border-radius: 0 5px 5px 0;
+            border-left: none;
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #000;
+            letter-spacing: 0.5px;
+            font-size: 1rem;
+        }
+
+        input[type="number"] {
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            background: #fff;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #000;
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .calculate-btn {
+            background: linear-gradient(135deg, #000 0%, #333 100%);
+            color: #fff;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .calculate-btn:hover {
+            background: linear-gradient(135deg, #333 0%, #555 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Results */
+        .result-section {
+            background: #fff;
+            border: none;
+            border-radius: 16px;
+            padding: 35px;
+            margin-top: 30px;
+            display: none;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid #000;
+        }
+
+        .bmi-value {
+            text-align: center;
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+            color: #000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: 2px;
+        }
+
+        .bmi-category {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .underweight { background: #e3f2fd; color: #1976d2; }
+        .normal { background: #e8f5e8; color: #2e7d32; }
+        .overweight { background: #fff3e0; color: #f57c00; }
+        .obese { background: #ffebee; color: #d32f2f; }
+
+        /* Ad Space Placeholders */
+        .ad-space {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: 2px dashed #000;
+            padding: 25px;
+            text-align: center;
+            margin: 30px 0;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .ad-space:hover {
+            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+            transform: scale(1.02);
+        }
+
+        /* Content Sections */
+        .content-section {
+            background: #fff;
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border-left: 6px solid #000;
+            transition: transform 0.3s ease;
+        }
+        
+        .content-section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #000;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        .bmi-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .bmi-table th,
+        .bmi-table td {
+            border: 1px solid #e0e0e0;
+            padding: 16px;
+            text-align: left;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bmi-table th {
+            background: linear-gradient(135deg, #000 0%, #333 100%);
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .bmi-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 35px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-weight: 500;
+            line-height: 1.7;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff8e1 100%);
+            border: 2px solid #ffa000;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 8px 30px rgba(255, 160, 0, 0.1);
+        }
+
+        .disclaimer-title {
+            font-weight: 900;
+            color: #e65100;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #000 0%, #333 100%);
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+                letter-spacing: 1px;
+            }
+
+            .calculator-section {
+                padding: 25px;
+                margin: 20px 0;
+            }
+
+            .input-group {
+                grid-template-columns: 1fr;
+            }
+
+            .bmi-value {
+                font-size: 3rem;
+            }
+
+            .content-section {
+                padding: 25px;
+            }
+            
+            .calculator-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+
+            .calculator-section {
+                padding: 20px;
+                margin: 15px 0;
+            }
+
+            .bmi-value {
+                font-size: 2.5rem;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+            
+            .calculator-title {
+                font-size: 1.6rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BMI CALCULATOR</h1>
+            <p class="subtitle">PROFESSIONAL BODY MASS INDEX CALCULATOR WITH HEALTH INSIGHTS</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Ad Space 1 -->
+        <div class="ad-space">
+            ADVERTISEMENT SPACE - TOP BANNER (728X90)
+        </div>
+
+        <!-- BMI Calculator -->
+        <section class="calculator-section">
+            <h2 class="calculator-title">CALCULATE YOUR BMI</h2>
+            
+            <div class="unit-toggle">
+                <button class="toggle-btn active" id="metricBtn" onclick="switchUnit('metric')">METRIC</button>
+                <button class="toggle-btn" id="imperialBtn" onclick="switchUnit('imperial')">IMPERIAL</button>
+            </div>
+
+            <form id="bmiForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="height" id="heightLabel">HEIGHT (CM)</label>
+                        <input type="number" id="height" placeholder="ENTER HEIGHT" step="0.1" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="weight" id="weightLabel">WEIGHT (KG)</label>
+                        <input type="number" id="weight" placeholder="ENTER WEIGHT" step="0.1" required>
+                    </div>
+                </div>
+                <button type="submit" class="calculate-btn">CALCULATE BMI</button>
+            </form>
+
+            <div class="result-section" id="resultSection">
+                <div class="bmi-value" id="bmiValue">0.0</div>
+                <div class="bmi-category" id="bmiCategory">CATEGORY</div>
+                <div id="bmiAdvice"></div>
+            </div>
+        </section>
+
+        <!-- Ad Space 2 -->
+        <div class="ad-space">
+            ADVERTISEMENT SPACE - RECTANGLE (300X250)
+        </div>
+
+        <!-- Content Grid -->
+        <div class="content-wrapper">
+            <!-- How to Use -->
+            <section class="content-section">
+                <h2 class="section-title">HOW TO USE THE BMI CALCULATOR</h2>
+                <ol>
+                    <li><strong>CHOOSE YOUR UNIT SYSTEM:</strong> SELECT EITHER METRIC (KG/CM) OR IMPERIAL (LBS/FT) UNITS USING THE TOGGLE BUTTONS.</li>
+                    <li><strong>ENTER YOUR HEIGHT:</strong> INPUT YOUR HEIGHT IN CENTIMETERS (METRIC) OR FEET AND INCHES (IMPERIAL).</li>
+                    <li><strong>ENTER YOUR WEIGHT:</strong> INPUT YOUR CURRENT WEIGHT IN KILOGRAMS (METRIC) OR POUNDS (IMPERIAL).</li>
+                    <li><strong>CALCULATE:</strong> CLICK THE "CALCULATE BMI" BUTTON TO GET YOUR RESULT INSTANTLY.</li>
+                    <li><strong>INTERPRET RESULTS:</strong> REVIEW YOUR BMI VALUE, CATEGORY, AND PERSONALIZED HEALTH RECOMMENDATIONS.</li>
+                </ol>
+                <p>OUR CALCULATOR PROVIDES IMMEDIATE RESULTS WITH DETAILED EXPLANATIONS TO HELP YOU UNDERSTAND YOUR HEALTH STATUS AND NEXT STEPS.</p>
+            </section>
+
+            <!-- BMI Categories -->
+            <section class="content-section">
+                <h2 class="section-title">BMI CATEGORIES AND HEALTH IMPLICATIONS</h2>
+                <table class="bmi-table">
+                    <thead>
+                        <tr>
+                            <th>BMI RANGE</th>
+                            <th>CATEGORY</th>
+                            <th>HEALTH RISK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BELOW 18.5</td>
+                            <td>UNDERWEIGHT</td>
+                            <td>INCREASED RISK OF NUTRITIONAL DEFICIENCY, OSTEOPOROSIS, ANEMIA</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>NORMAL WEIGHT</td>
+                            <td>LOWEST RISK OF WEIGHT-RELATED HEALTH PROBLEMS</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>OVERWEIGHT</td>
+                            <td>INCREASED RISK OF DIABETES, HEART DISEASE, HIGH BLOOD PRESSURE</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 AND ABOVE</td>
+                            <td>OBESE</td>
+                            <td>HIGH RISK OF SERIOUS HEALTH CONDITIONS INCLUDING CARDIOVASCULAR DISEASE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Ad Space 3 -->
+            <div class="ad-space">
+                ADVERTISEMENT SPACE - LEADERBOARD (728X90)
+            </div>
+
+            <!-- Understanding BMI -->
+            <section class="content-section">
+                <h2 class="section-title">UNDERSTANDING BODY MASS INDEX (BMI)</h2>
+                <p>BODY MASS INDEX (BMI) IS A WIDELY-USED SCREENING TOOL THAT ESTIMATES BODY FAT BASED ON HEIGHT AND WEIGHT MEASUREMENTS. DEVELOPED IN THE 19TH CENTURY BY BELGIAN MATHEMATICIAN ADOLPHE QUETELET, BMI PROVIDES A STANDARDIZED METHOD FOR ASSESSING WHETHER AN INDIVIDUAL'S WEIGHT FALLS WITHIN A HEALTHY RANGE.</p>
+                
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">BMI FORMULA:</h3>
+                <p><strong>METRIC:</strong> BMI = WEIGHT (KG) ÷ HEIGHT² (M²)</p>
+                <p><strong>IMPERIAL:</strong> BMI = (WEIGHT (LBS) × 703) ÷ HEIGHT² (INCHES²)</p>
+
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">WHAT BMI TELLS YOU:</h3>
+                <ul>
+                    <li>PROVIDES A GENERAL INDICATION OF BODY COMPOSITION</li>
+                    <li>HELPS IDENTIFY POTENTIAL WEIGHT-RELATED HEALTH RISKS</li>
+                    <li>SERVES AS A STARTING POINT FOR HEALTH DISCUSSIONS WITH HEALTHCARE PROVIDERS</li>
+                    <li>USEFUL FOR POPULATION-LEVEL HEALTH ASSESSMENTS AND RESEARCH</li>
+                </ul>
+
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">BMI LIMITATIONS:</h3>
+                <ul>
+                    <li>DOES NOT DISTINGUISH BETWEEN MUSCLE MASS AND FAT MASS</li>
+                    <li>MAY NOT BE ACCURATE FOR ATHLETES WITH HIGH MUSCLE MASS</li>
+                    <li>DOESN'T ACCOUNT FOR FAT DISTRIBUTION PATTERNS</li>
+                    <li>MAY VARY IN ACCURACY ACROSS DIFFERENT ETHNIC GROUPS</li>
+                    <li>NOT SUITABLE FOR PREGNANT WOMEN, CHILDREN, OR ELDERLY INDIVIDUALS WITHOUT ADJUSTMENTS</li>
+                </ul>
+            </section>
+
+            <!-- Health Recommendations -->
+            <section class="content-section">
+                <h2 class="section-title">HEALTH RECOMMENDATIONS BY BMI CATEGORY</h2>
+                
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">FOR UNDERWEIGHT INDIVIDUALS (BMI < 18.5):</h3>
+                <ul>
+                    <li>CONSULT WITH A HEALTHCARE PROVIDER TO RULE OUT UNDERLYING HEALTH CONDITIONS</li>
+                    <li>FOCUS ON NUTRIENT-DENSE, CALORIE-RICH FOODS</li>
+                    <li>CONSIDER STRENGTH TRAINING TO BUILD MUSCLE MASS</li>
+                    <li>MONITOR FOR SIGNS OF NUTRITIONAL DEFICIENCIES</li>
+                    <li>AIM FOR GRADUAL, HEALTHY WEIGHT GAIN OF 1-2 POUNDS PER WEEK</li>
+                </ul>
+
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">FOR NORMAL WEIGHT INDIVIDUALS (BMI 18.5-24.9):</h3>
+                <ul>
+                    <li>MAINTAIN CURRENT WEIGHT THROUGH BALANCED DIET AND REGULAR EXERCISE</li>
+                    <li>FOCUS ON OVERALL HEALTH RATHER THAN JUST WEIGHT</li>
+                    <li>INCORPORATE BOTH CARDIOVASCULAR AND STRENGTH TRAINING EXERCISES</li>
+                    <li>MONITOR WEIGHT TRENDS RATHER THAN DAILY FLUCTUATIONS</li>
+                    <li>CONTINUE HEALTHY LIFESTYLE HABITS FOR LONG-TERM WELLNESS</li>
+                </ul>
+
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">FOR OVERWEIGHT INDIVIDUALS (BMI 25.0-29.9):</h3>
+                <ul>
+                    <li>AIM FOR GRADUAL WEIGHT LOSS OF 1-2 POUNDS PER WEEK</li>
+                    <li>CREATE A MODERATE CALORIC DEFICIT THROUGH DIET AND EXERCISE</li>
+                    <li>INCREASE PHYSICAL ACTIVITY TO AT LEAST 150 MINUTES PER WEEK</li>
+                    <li>FOCUS ON WHOLE FOODS AND REDUCE PROCESSED FOOD INTAKE</li>
+                    <li>MONITOR BLOOD PRESSURE, CHOLESTEROL, AND BLOOD SUGAR LEVELS</li>
+                </ul>
+
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">FOR OBESE INDIVIDUALS (BMI ≥ 30.0):</h3>
+                <ul>
+                    <li>CONSULT WITH HEALTHCARE PROVIDERS FOR COMPREHENSIVE WEIGHT MANAGEMENT</li>
+                    <li>CONSIDER MEDICALLY SUPERVISED WEIGHT LOSS PROGRAMS</li>
+                    <li>START WITH LOW-IMPACT EXERCISES AND GRADUALLY INCREASE INTENSITY</li>
+                    <li>ADDRESS UNDERLYING HEALTH CONDITIONS THAT MAY CONTRIBUTE TO WEIGHT GAIN</li>
+                    <li>FOCUS ON SUSTAINABLE LIFESTYLE CHANGES RATHER THAN QUICK FIXES</li>
+                </ul>
+            </section>
+
+            <!-- Ad Space 4 -->
+            <div class="ad-space">
+                ADVERTISEMENT SPACE - RECTANGLE (300X250)
+            </div>
+
+            <!-- Lifestyle Tips -->
+            <section class="content-section">
+                <h2 class="section-title">ESSENTIAL LIFESTYLE TIPS FOR HEALTHY WEIGHT MANAGEMENT</h2>
+                
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">NUTRITION GUIDELINES:</h3>
+                <ul>
+                    <li><strong>PORTION CONTROL:</strong> USE SMALLER PLATES AND PAY ATTENTION TO SERVING SIZES</li>
+                    <li><strong>BALANCED MEALS:</strong> INCLUDE LEAN PROTEINS, WHOLE GRAINS, FRUITS, AND VEGETABLES</li>
+                    <li><strong>HYDRATION:</strong> DRINK AT LEAST 8 GLASSES OF WATER DAILY</li>
+                    <li><strong>MEAL TIMING:</strong> EAT REGULAR MEALS AND AVOID LATE-NIGHT SNACKING</li>
+                    <li><strong>MINDFUL EATING:</strong> EAT SLOWLY AND PAY ATTENTION TO HUNGER AND SATIETY CUES</li>
+                </ul>
+
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">EXERCISE RECOMMENDATIONS:</h3>
+                <ul>
+                    <li><strong>CARDIOVASCULAR EXERCISE:</strong> 150 MINUTES OF MODERATE-INTENSITY AEROBIC ACTIVITY WEEKLY</li>
+                    <li><strong>STRENGTH TRAINING:</strong> 2-3 SESSIONS PER WEEK TARGETING ALL MAJOR MUSCLE GROUPS</li>
+                    <li><strong>FLEXIBILITY:</strong> INCLUDE STRETCHING AND MOBILITY WORK</li>
+                    <li><strong>DAILY ACTIVITY:</strong> INCORPORATE MOVEMENT THROUGHOUT THE DAY</li>
+                    <li><strong>PROGRESSIVE OVERLOAD:</strong> GRADUALLY INCREASE EXERCISE INTENSITY AND DURATION</li>
+                </ul>
+
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">BEHAVIORAL STRATEGIES:</h3>
+                <ul>
+                    <li><strong>GOAL SETTING:</strong> SET SPECIFIC, MEASURABLE, ACHIEVABLE, RELEVANT, AND TIME-BOUND (SMART) GOALS</li>
+                    <li><strong>SELF-MONITORING:</strong> KEEP TRACK OF FOOD INTAKE, EXERCISE, AND WEIGHT CHANGES</li>
+                    <li><strong>SOCIAL SUPPORT:</strong> ENGAGE FAMILY AND FRIENDS IN HEALTHY LIFESTYLE CHANGES</li>
+                    <li><strong>STRESS MANAGEMENT:</strong> PRACTICE STRESS-REDUCTION TECHNIQUES LIKE MEDITATION OR YOGA</li>
+                    <li><strong>SLEEP QUALITY:</strong> AIM FOR 7-9 HOURS OF QUALITY SLEEP NIGHTLY</li>
+                </ul>
+            </section>
+
+            <!-- When to Consult a Healthcare Provider -->
+            <section class="content-section">
+                <h2 class="section-title">WHEN TO CONSULT A HEALTHCARE PROVIDER</h2>
+                <p>WHILE BMI IS A USEFUL SCREENING TOOL, IT'S IMPORTANT TO CONSULT WITH HEALTHCARE PROFESSIONALS FOR COMPREHENSIVE HEALTH ASSESSMENT AND PERSONALIZED ADVICE.</p>
+                
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">SEEK PROFESSIONAL GUIDANCE IF:</h3>
+                <ul>
+                    <li>YOUR BMI FALLS OUTSIDE THE NORMAL RANGE (BELOW 18.5 OR ABOVE 25)</li>
+                    <li>YOU HAVE A FAMILY HISTORY OF OBESITY, DIABETES, OR HEART DISEASE</li>
+                    <li>YOU EXPERIENCE UNEXPLAINED WEIGHT GAIN OR LOSS</li>
+                    <li>YOU HAVE EXISTING HEALTH CONDITIONS THAT MAY AFFECT WEIGHT MANAGEMENT</li>
+                    <li>YOU'RE CONSIDERING SIGNIFICANT DIETARY OR EXERCISE PROGRAM CHANGES</li>
+                    <li>YOU NEED HELP DEVELOPING A SUSTAINABLE WEIGHT MANAGEMENT PLAN</li>
+                    <li>YOU'RE STRUGGLING WITH EMOTIONAL OR PSYCHOLOGICAL ASPECTS OF WEIGHT MANAGEMENT</li>
+                </ul>
+
+                <h3 style="margin: 20px 0 10px 0; font-weight: 600;">HEALTHCARE PROFESSIONALS WHO CAN HELP:</h3>
+                <ul>
+                    <li><strong>PRIMARY CARE PHYSICIANS:</strong> OVERALL HEALTH ASSESSMENT AND MEDICAL CLEARANCE</li>
+                    <li><strong>REGISTERED DIETITIANS:</strong> PERSONALIZED NUTRITION PLANNING AND COUNSELING</li>
+                    <li><strong>CERTIFIED PERSONAL TRAINERS:</strong> SAFE AND EFFECTIVE EXERCISE PROGRAM DESIGN</li>
+                    <li><strong>ENDOCRINOLOGISTS:</strong> HORMONE-RELATED WEIGHT MANAGEMENT ISSUES</li>
+                    <li><strong>PSYCHOLOGISTS/COUNSELORS:</strong> BEHAVIORAL AND EMOTIONAL ASPECTS OF WEIGHT MANAGEMENT</li>
+                </ul>
+            </section>
+
+            <!-- Ad Space 5 -->
+            <div class="ad-space">
+                ADVERTISEMENT SPACE - SKYSCRAPER (160X600)
+            </div>
+        </div>
+
+        <!-- Medical Disclaimer -->
+        <div class="disclaimer">
+            <div class="disclaimer-title">IMPORTANT MEDICAL DISCLAIMER</div>
+            <p>THIS BMI CALCULATOR AND THE INFORMATION PROVIDED ON THIS WEBSITE ARE FOR EDUCATIONAL AND INFORMATIONAL PURPOSES ONLY. THE RESULTS SHOULD NOT BE CONSIDERED AS MEDICAL ADVICE, DIAGNOSIS, OR TREATMENT RECOMMENDATIONS. BMI IS A SCREENING TOOL AND MAY NOT BE ACCURATE FOR ALL INDIVIDUALS, INCLUDING ATHLETES, PREGNANT WOMEN, ELDERLY INDIVIDUALS, OR THOSE WITH CERTAIN MEDICAL CONDITIONS.</p>
+            <p>ALWAYS CONSULT WITH QUALIFIED HEALTHCARE PROFESSIONALS BEFORE MAKING ANY DECISIONS ABOUT YOUR HEALTH, WEIGHT MANAGEMENT, DIET, OR EXERCISE PROGRAMS. INDIVIDUAL HEALTH NEEDS VARY, AND WHAT WORKS FOR ONE PERSON MAY NOT BE APPROPRIATE FOR ANOTHER. IF YOU HAVE SPECIFIC HEALTH CONCERNS OR CONDITIONS, SEEK PROFESSIONAL MEDICAL ADVICE TAILORED TO YOUR INDIVIDUAL CIRCUMSTANCES.</p>
+            <p>THE CREATORS OF THIS CALCULATOR ASSUME NO RESPONSIBILITY FOR ANY ACTIONS TAKEN BASED ON THE INFORMATION PROVIDED. THIS TOOL IS NOT INTENDED TO REPLACE PROFESSIONAL MEDICAL CONSULTATION, DIAGNOSIS, OR TREATMENT.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ZFIERIZ BMI CALCULATOR. ALL RIGHTS RESERVED. | FOR EDUCATIONAL PURPOSES ONLY.</p>
+            <p>ALWAYS CONSULT HEALTHCARE PROFESSIONALS FOR PERSONALIZED MEDICAL ADVICE.</p>
+            <p><a href="terms.html" style="color: #fff; margin-right: 20px;">TERMS OF USE</a> | <a href="privacy.html" style="color: #fff;">PRIVACY POLICY</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Global variables
+        let currentUnit = 'metric';
+        
+        // Unit conversion functions
+        function switchUnit(unit) {
+            currentUnit = unit;
+            const metricBtn = document.getElementById('metricBtn');
+            const imperialBtn = document.getElementById('imperialBtn');
+            const heightLabel = document.getElementById('heightLabel');
+            const weightLabel = document.getElementById('weightLabel');
+            const heightInput = document.getElementById('height');
+            const weightInput = document.getElementById('weight');
+            
+            // Clear inputs when switching units
+            heightInput.value = '';
+            weightInput.value = '';
+            
+            if (unit === 'metric') {
+                metricBtn.classList.add('active');
+                imperialBtn.classList.remove('active');
+                heightLabel.textContent = 'HEIGHT (CM)';
+                weightLabel.textContent = 'WEIGHT (KG)';
+                heightInput.placeholder = 'ENTER HEIGHT IN CM';
+                weightInput.placeholder = 'ENTER WEIGHT IN KG';
+            } else {
+                imperialBtn.classList.add('active');
+                metricBtn.classList.remove('active');
+                heightLabel.textContent = 'HEIGHT (INCHES)';
+                weightLabel.textContent = 'WEIGHT (LBS)';
+                heightInput.placeholder = 'ENTER HEIGHT IN INCHES';
+                weightInput.placeholder = 'ENTER WEIGHT IN LBS';
+            }
+        }
+        
+        // BMI calculation function
+        function calculateBMI(weight, height, unit) {
+            let bmi;
+            if (unit === 'metric') {
+                // BMI = weight (kg) / (height (m))^2
+                const heightInMeters = height / 100;
+                bmi = weight / (heightInMeters * heightInMeters);
+            } else {
+                // BMI = (weight (lbs) * 703) / (height (inches))^2
+                bmi = (weight * 703) / (height * height);
+            }
+            return bmi;
+        }
+        
+        // Get BMI category and advice
+        function getBMICategory(bmi) {
+            if (bmi < 18.5) {
+                return {
+                    category: 'UNDERWEIGHT',
+                    class: 'underweight',
+                    advice: 'YOUR BMI INDICATES YOU MAY BE UNDERWEIGHT. CONSIDER CONSULTING WITH A HEALTHCARE PROVIDER TO DISCUSS HEALTHY WEIGHT GAIN STRATEGIES AND RULE OUT ANY UNDERLYING HEALTH CONDITIONS. FOCUS ON NUTRIENT-DENSE FOODS AND STRENGTH TRAINING TO BUILD HEALTHY MUSCLE MASS.'
+                };
+            } else if (bmi >= 18.5 && bmi < 25) {
+                return {
+                    category: 'NORMAL WEIGHT',
+                    class: 'normal',
+                    advice: 'CONGRATULATIONS! YOUR BMI FALLS WITHIN THE NORMAL WEIGHT RANGE. MAINTAIN YOUR CURRENT WEIGHT THROUGH A BALANCED DIET AND REGULAR PHYSICAL ACTIVITY. CONTINUE MONITORING YOUR HEALTH AND LIFESTYLE HABITS TO ENSURE LONG-TERM WELLNESS.'
+                };
+            } else if (bmi >= 25 && bmi < 30) {
+                return {
+                    category: 'OVERWEIGHT',
+                    class: 'overweight',
+                    advice: 'YOUR BMI INDICATES YOU MAY BE OVERWEIGHT. CONSIDER MAKING GRADUAL LIFESTYLE CHANGES SUCH AS INCREASING PHYSICAL ACTIVITY AND ADOPTING A BALANCED, CALORIE-CONTROLLED DIET. CONSULT WITH A HEALTHCARE PROVIDER FOR PERSONALIZED WEIGHT MANAGEMENT STRATEGIES.'
+                };
+            } else {
+                return {
+                    category: 'OBESE',
+                    class: 'obese',
+                    advice: 'YOUR BMI INDICATES OBESITY, WHICH MAY INCREASE YOUR RISK OF VARIOUS HEALTH CONDITIONS. IT\'S IMPORTANT TO CONSULT WITH HEALTHCARE PROFESSIONALS FOR COMPREHENSIVE WEIGHT MANAGEMENT SUPPORT. CONSIDER MEDICALLY SUPERVISED PROGRAMS AND FOCUS ON SUSTAINABLE LIFESTYLE CHANGES.'
+                };
+            }
+        }
+        
+        // Form submission handler
+        document.getElementById('bmiForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const height = parseFloat(document.getElementById('height').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            
+            // Validation
+            if (!height || !weight || height <= 0 || weight <= 0) {
+                alert('PLEASE ENTER VALID HEIGHT AND WEIGHT VALUES.');
+                return;
+            }
+            
+            // Additional validation for reasonable ranges
+            if (currentUnit === 'metric') {
+                if (height < 50 || height > 300) {
+                    alert('PLEASE ENTER A REALISTIC HEIGHT BETWEEN 50-300 CM.');
+                    return;
+                }
+                if (weight < 10 || weight > 500) {
+                    alert('PLEASE ENTER A REALISTIC WEIGHT BETWEEN 10-500 KG.');
+                    return;
+                }
+            } else {
+                if (height < 20 || height > 120) {
+                    alert('PLEASE ENTER A REALISTIC HEIGHT BETWEEN 20-120 INCHES.');
+                    return;
+                }
+                if (weight < 20 || weight > 1100) {
+                    alert('PLEASE ENTER A REALISTIC WEIGHT BETWEEN 20-1100 LBS.');
+                    return;
+                }
+            }
+            
+            // Calculate BMI
+            const bmi = calculateBMI(weight, height, currentUnit);
+            const bmiInfo = getBMICategory(bmi);
+            
+            // Display results
+            document.getElementById('bmiValue').textContent = bmi.toFixed(1);
+            document.getElementById('bmiCategory').textContent = bmiInfo.category;
+            document.getElementById('bmiCategory').className = `bmi-category ${bmiInfo.class}`;
+            document.getElementById('bmiAdvice').innerHTML = `<p style="margin-top: 15px; padding: 15px; background: #f8f9fa; border-radius: 4px; line-height: 1.6;">${bmiInfo.advice}</p>`;
+            
+            // Show results section
+            document.getElementById('resultSection').style.display = 'block';
+            
+            // Smooth scroll to results
+            document.getElementById('resultSection').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'center'
+            });
+        });
+        
+        // Input validation for numeric inputs
+        document.getElementById('height').addEventListener('input', function(e) {
+            // Remove any non-numeric characters except decimal point
+            e.target.value = e.target.value.replace(/[^0-9.]/g, '');
+        });
+        
+        document.getElementById('weight').addEventListener('input', function(e) {
+            // Remove any non-numeric characters except decimal point
+            e.target.value = e.target.value.replace(/[^0-9.]/g, '');
+        });
+        
+        // Initialize the calculator with metric units
+        switchUnit('metric');
+        
+        // Add smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
