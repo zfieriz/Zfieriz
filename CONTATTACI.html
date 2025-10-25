@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZFIERIZ - CONTATTACI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("l_kYjP4055k1H5wd2"); // INSERISCI IL TUO USER ID QUI
+    })();
+  </script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #fff; color: #000; line-height: 1.6; padding: 0 20px; }
+    header, footer { text-align: center; padding: 20px 0; border-bottom: 1px solid #ddd; }
+    h2 { font-size: 36px; margin-bottom: 10px; }
+    form { display: flex; flex-direction: column; gap: 20px; }
+    input, textarea {
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background: #000;
+      color: #fff;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ZFIERIZ</h1>
+    <nav><a href="index.html">← TORNA ALLA HOME</a></nav>
+  </header>
+
+  <section id="contattaci" style="padding: 80px 20px; background: #f9f9f9;">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h2>CONTATTACI</h2>
+      <p style="color: #555; margin-bottom: 40px;">Hai una domanda? Scrivici!</p>
+
+      <form id="contact-form">
+        <input type="text" name="from_name" placeholder="Il tuo nome" required />
+        <input type="email" name="reply_to" placeholder="La tua email" required />
+        <textarea name="message" rows="6" placeholder="Il tuo messaggio" required></textarea>
+        <button type="submit">INVIA MESSAGGIO</button>
+      </form>
+
+      <p id="form-status" style="margin-top: 20px;"></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 ZFIERIZ. TUTTI I DIRITTI RISERVATI.
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_6fnglhn', 'template_hz7msuh', this)
+        .then(function() {
+          document.getElementById("form-status").innerText = "MESSAGGIO INVIATO CON SUCCESSO!";
+        }, function(error) {
+          document.getElementById("form-status").innerText = "ERRORE NELL'INVIO. RIPROVA.";
+          console.error('FAILED...', error);
+        });
+
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
