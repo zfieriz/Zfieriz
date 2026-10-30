@@ -1,0 +1,8 @@
+User-agent: Google-adstxt
+Disallow: 
+
+User-agent: *
+Allow: /
+
+
+Sitemap: https://www.zfieriz.com/sitemap.xml

@@ -1,0 +1,1527 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="Ripetizioni personalizzate per scuole medie e superiori: italiano, storia, inglese, informatica e matematica. Lezioni di 60 minuti da 15 €.">
+  <meta name="robots" content="index,follow">
+  <title>ZFIERIZ | Ripetizioni personalizzate per medie e superiori</title>
+  <style>
+
+:root {
+  --ink: #111d35;
+  --ink-soft: #52647f;
+  --muted: #74839a;
+  --blue: #2874ff;
+  --blue-dark: #1352d5;
+  --blue-pale: #e8f0ff;
+  --paper: #f7f9fc;
+  --white: #ffffff;
+  --line: #e3e9f2;
+  --mint: #8be8c8;
+  --navy: #101f3d;
+  --radius: 24px;
+  --shadow: 0 24px 70px rgba(25, 54, 103, .10);
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+button, input, select { font: inherit; }
+button, a, summary, input, select { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid rgba(40,116,255,.55); outline-offset: 3px; }
+.site-shell { overflow: clip; }
+.wrap { width: min(1220px, calc(100% - 64px)); margin: 0 auto; }
+.section { padding-top: 112px; padding-bottom: 112px; }
+
+.site-header { background: rgba(255,255,255,.94); border-bottom: 1px solid rgba(225,232,242,.8); position: sticky; top: 0; z-index: 30; backdrop-filter: blur(16px); }
+.header-inner { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.brand-mark { width: 34px; height: 34px; display: inline-flex; align-items: end; justify-content: center; gap: 3px; border-radius: 10px; padding: 8px 7px; background: var(--navy); }
+.brand-mark span { width: 4px; border-radius: 4px; background: #80aaff; }
+.brand-mark span:nth-child(1) { height: 11px; }
+.brand-mark span:nth-child(2) { height: 18px; background: #fff; }
+.brand-mark span:nth-child(3) { height: 14px; background: var(--mint); }
+.brand-name { font-family: Manrope, sans-serif; font-size: 23px; line-height: 1.1; font-weight: 800; letter-spacing: -.9px; }
+.brand-subtitle { display: block; margin-top: 5px; font: 700 9px/1.2 'DM Sans', sans-serif; letter-spacing: 2px; color: #71819a; }
+.main-nav { display: flex; align-items: center; gap: 30px; color: #63738b; font-size: 14px; font-weight: 600; }
+.main-nav > a { transition: color .18s ease; }
+.main-nav > a:hover, .footer-links a:hover { color: var(--blue); }
+.nav-toggle { display: none; background: none; border: 1px solid var(--line); color: var(--ink); border-radius: 12px; width: 42px; height: 42px; font-size: 21px; }
+
+.ticker { background: #e9f1ff; color: #7183a1; overflow: hidden; white-space: nowrap; border-bottom: 1px solid #dfe8f7; }
+.ticker-track { width: max-content; display: flex; align-items: center; gap: 35px; padding: 10px 0; animation: ticker-scroll 42s linear infinite; font-size: 12px; letter-spacing: .8px; font-weight: 700; }
+.ticker-track b { margin-left: 26px; color: var(--blue); font-size: 12px; }
+@keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.hero { display: grid; grid-template-columns: 1.03fr .97fr; align-items: center; gap: 62px; padding-top: 82px; padding-bottom: 86px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--blue); font-size: 11px; font-weight: 800; letter-spacing: 1.8px; line-height: 1.5; text-transform: uppercase; }
+.eyebrow-dot { width: 7px; height: 7px; display: inline-block; background: var(--blue); border-radius: 50%; box-shadow: 0 0 0 4px #e2ecff; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-family: Manrope, 'DM Sans', sans-serif; }
+h1 { margin: 24px 0 21px; font-size: clamp(37px, 4.15vw, 58px); line-height: 1.12; letter-spacing: -2.5px; font-weight: 800; max-width: 700px; }
+h1 span, .section-heading h2 span, .method-intro h2 span, .booking-band h2 span, .faq-section h2 span { color: var(--blue); }
+.hero-lede { max-width: 610px; color: var(--ink-soft); font-size: 17px; line-height: 1.8; margin-bottom: 27px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.button { border: 1px solid transparent; border-radius: 13px; min-height: 52px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; gap: 13px; font-size: 13px; font-weight: 800; letter-spacing: -.05px; transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { color: white; background: var(--blue); box-shadow: 0 10px 23px rgba(40,116,255,.19); }
+.button-primary:hover { background: var(--blue-dark); box-shadow: 0 13px 26px rgba(40,116,255,.25); }
+.button-secondary, .button-outline { background: white; color: var(--ink); border-color: #dfe6f1; }
+.button-secondary:hover, .button-outline:hover { border-color: #98b9ff; background: #f9fbff; }
+.button-small { min-height: 42px; padding: 0 16px; border-radius: 11px; font-size: 12px; }
+.button-light { color: var(--navy); background: white; }
+.button-light:hover { background: #edf4ff; }
+.button-full { width: 100%; }
+.button-text { background: transparent; color: var(--ink-soft); border-color: transparent; box-shadow: none; }
+.hero-price { display: flex; align-items: center; gap: 12px; margin-top: 31px; }
+.price-icon { width: 37px; height: 37px; display: grid; place-items: center; border: 1px solid #d9e5fc; border-radius: 12px; background: var(--blue-pale); color: var(--blue); font-weight: 800; }
+.hero-price strong, .hero-price small { display: block; }
+.hero-price strong { font-size: 13px; }
+.hero-price small { color: var(--muted); font-size: 11px; margin-top: 2px; }
+
+.hero-visual { min-height: 485px; position: relative; isolation: isolate; border-radius: 30px; overflow: hidden; padding: 27px; color: white; background: linear-gradient(140deg, #0f58dc 0%, #0737a5 42%, #10234a 100%); box-shadow: 0 26px 65px rgba(13,66,164,.22); }
+.hero-visual::before { content: ''; position: absolute; z-index: -1; width: 360px; height: 360px; border-radius: 50%; right: -75px; top: -150px; background: radial-gradient(circle, rgba(92,169,255,.65) 0%, rgba(63,127,251,.13) 48%, transparent 70%); }
+.hero-visual::after { content: ''; position: absolute; z-index: -1; width: 420px; height: 280px; border-radius: 50%; left: -150px; bottom: -160px; background: rgba(2,21,70,.55); filter: blur(9px); }
+.visual-glow { position: absolute; z-index: -1; inset: 0; background-image: radial-gradient(rgba(255,255,255,.16) .7px, transparent .7px); background-size: 18px 18px; opacity: .45; mask-image: linear-gradient(to bottom right, #000, transparent 75%); }
+.visual-topline, .visual-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 9px; letter-spacing: 1.25px; font-weight: 800; color: rgba(255,255,255,.8); }
+.visual-live { display: inline-flex; gap: 7px; align-items: center; font-size: 8px; letter-spacing: .8px; }
+.visual-live i { width: 6px; height: 6px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 4px rgba(139,232,200,.14); }
+.study-sheet { position: relative; color: var(--ink); background: rgba(255,255,255,.97); border: 1px solid rgba(255,255,255,.7); border-radius: 19px; margin: 46px auto 0; padding: 23px 25px 19px; width: min(100%, 380px); box-shadow: 0 20px 50px rgba(0,20,70,.28); transform: rotate(-1deg); }
+.sheet-head { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+.sheet-tag { color: var(--blue); background: #eaf1ff; border-radius: 100px; padding: 5px 8px; font-size: 8px; font-weight: 800; letter-spacing: .75px; }
+.sheet-index { font-size: 9px; color: #9aa7bc; font-weight: 700; }
+.sheet-question { color: #65748b; font-size: 12px; margin: 19px 0 2px; }
+.equation { font-family: Manrope, sans-serif; font-size: 33px; line-height: 1.55; letter-spacing: -1.3px; font-weight: 800; color: #102348; padding-bottom: 13px; border-bottom: 1px solid #eaf0f7; }
+.equation-step { display: grid; grid-template-columns: 29px 1fr 17px; align-items: center; gap: 9px; padding: 9px 0; border-bottom: 1px solid #edf1f7; color: #4e5c72; font-size: 12px; }
+.equation-step > span:first-child { font-size: 9px; font-weight: 800; color: #9caac0; }
+.step-check { color: #17956f; background: #e1f7ed; width: 18px; height: 18px; border-radius: 50%; display: grid; place-items: center; font-size: 10px; }
+.equation-final { color: var(--blue-dark); font-weight: 800; border-bottom: 0; }
+.sheet-note { display: flex; align-items: center; gap: 10px; margin-top: 10px; padding: 11px; border-radius: 12px; background: #f4f7ff; }
+.note-sparkle { display: grid; place-items: center; width: 28px; height: 28px; flex-shrink: 0; border-radius: 9px; background: #dce8ff; color: var(--blue); }
+.sheet-note b, .sheet-note small { display: block; }
+.sheet-note b { font-size: 10px; }
+.sheet-note small { margin-top: 2px; color: #74839a; font-size: 9px; }
+.floating-note { position: absolute; z-index: 3; display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,.97); color: var(--ink); padding: 11px 14px; border-radius: 13px; box-shadow: 0 13px 32px rgba(3,20,60,.25); }
+.floating-note b, .floating-note small { display: block; white-space: nowrap; }
+.floating-note b { font-size: 10px; }
+.floating-note small { color: #77869b; font-size: 9px; margin-top: 1px; }
+.note-symbol { color: white; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 9px; background: var(--blue); font-weight: 800; }
+.note-symbol-light { color: #087c5b; background: #d7f8ea; }
+.note-one { top: 47px; left: 14px; transform: scale(.85); transform-origin: left top; }
+.note-two { bottom: 64px; right: -5px; }
+.visual-foot { margin-top: 33px; opacity: .7; font-size: 8px; letter-spacing: 2px; }
+
+.quick-facts { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; }
+.facts-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 22px; padding-top: 23px; padding-bottom: 23px; }
+.fact { display: flex; align-items: center; gap: 12px; padding-left: 20px; border-left: 1px solid var(--line); }
+.fact:first-child { border-left: 0; padding-left: 0; }
+.fact-icon { display: grid; place-items: center; flex-shrink: 0; width: 37px; height: 37px; border-radius: 11px; background: #eef3ff; color: var(--blue); font-size: 20px; font-weight: 700; }
+.fact strong, .fact small { display: block; }
+.fact strong { font-family: Manrope, sans-serif; font-size: 13px; }
+.fact small { margin-top: 1px; color: var(--muted); font-size: 11px; }
+
+.section-heading { max-width: 800px; margin-bottom: 38px; }
+.section-heading-split { display: flex; justify-content: space-between; align-items: end; gap: 48px; max-width: none; }
+.section-heading h2, .method-intro h2, .booking-band h2 { margin: 12px 0 0; font-size: clamp(31px, 3.1vw, 44px); line-height: 1.2; letter-spacing: -1.8px; }
+.section-heading > p, .section-heading-split > p { max-width: 410px; margin: 0 0 3px; color: var(--ink-soft); font-size: 14px; line-height: 1.8; }
+.level-switch { display: flex; align-items: center; gap: 8px; margin-bottom: 26px; }
+.switch-label { font-size: 10px; letter-spacing: 1.4px; font-weight: 800; color: var(--muted); margin-right: 8px; }
+.level-button { background: transparent; border: 1px solid #dfe6f1; color: #65748b; padding: 9px 14px; border-radius: 10px; font-size: 11px; font-weight: 700; transition: .2s ease; }
+.level-button:hover { border-color: #a9c5ff; }
+.level-button.is-active { border-color: var(--blue); color: white; background: var(--blue); box-shadow: 0 6px 16px rgba(40,116,255,.16); }
+.subjects-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 15px; }
+.subject-card { position: relative; min-height: 253px; padding: 24px 24px 21px; border: 1px solid var(--line); border-radius: 18px; background: white; display: flex; flex-direction: column; align-items: start; transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
+.subject-card:hover { transform: translateY(-4px); border-color: #c6d8ff; box-shadow: 0 16px 38px rgba(31,63,118,.07); }
+.subject-top { width: 100%; display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.subject-number { color: #a4b0c2; font-size: 10px; letter-spacing: 1px; font-weight: 800; }
+.subject-symbol { display: grid; place-items: center; width: 43px; height: 43px; background: #edf3ff; color: var(--blue); border-radius: 13px; font: 800 17px Manrope, sans-serif; }
+.subject-italian .subject-symbol { background: #eaf8f2; color: #168766; }
+.subject-english .subject-symbol { background: #fff2e7; color: #c56f24; }
+.subject-history .subject-symbol { background: #f0eaff; color: #7752c7; }
+.subject-tech .subject-symbol { background: #e8f5fa; color: #2483a1; }
+.subject-card h3 { margin: 0 0 9px; font-size: 19px; letter-spacing: -.5px; }
+.subject-card p { color: var(--ink-soft); font-size: 12px; line-height: 1.75; margin-bottom: 20px; max-width: 300px; }
+.text-link { display: inline-flex; gap: 9px; align-items: center; color: var(--blue-dark); font-size: 11px; font-weight: 800; margin-top: auto; }
+.text-link span { font-size: 15px; transition: transform .2s ease; }
+.text-link:hover span { transform: translate(2px,-2px); }
+.level-note { margin: 19px 0 0; min-height: 24px; color: #74839a; font-size: 12px; }
+
+.method-section { background: var(--navy); color: white; padding: 103px 0; position: relative; isolation: isolate; overflow: hidden; }
+.method-section::before { content: ''; position: absolute; z-index: -1; width: 600px; height: 600px; right: -240px; top: -370px; border-radius: 50%; background: radial-gradient(circle, rgba(40,116,255,.32), transparent 68%); }
+.method-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 100px; align-items: center; }
+.eyebrow-light { color: #9ebcff; }
+.method-intro h2 { font-size: clamp(34px, 3.4vw, 49px); margin: 16px 0 19px; }
+.method-intro h2 span { color: #8eb2ff; }
+.method-intro p { max-width: 430px; color: #afbad0; font-size: 14px; line-height: 1.85; margin-bottom: 26px; }
+.method-steps { border-top: 1px solid rgba(255,255,255,.14); }
+.method-step { display: grid; grid-template-columns: 44px 1fr 18px; gap: 18px; padding: 24px 0; border-bottom: 1px solid rgba(255,255,255,.14); align-items: start; }
+.step-number { color: #89aaff; font: 700 11px Manrope, sans-serif; padding-top: 3px; }
+.method-step h3 { margin: 0 0 5px; font-size: 16px; }
+.method-step p { margin: 0; max-width: 480px; color: #aab7cf; font-size: 12px; line-height: 1.75; }
+.step-arrow { font-size: 17px; color: #8ba8e3; }
+
+.pricing-section { padding-top: 109px; padding-bottom: 101px; }
+.pricing-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 13px; align-items: stretch; }
+.price-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--line); background: white; border-radius: 18px; padding: 22px 19px 19px; position: relative; }
+.price-card-featured { border-color: #a8c4ff; box-shadow: 0 12px 30px rgba(40,116,255,.1); }
+.featured-label { margin: -22px -19px 19px; padding: 9px 14px; border-radius: 17px 17px 0 0; background: #eaf1ff; color: var(--blue-dark); text-align: center; font-size: 8px; font-weight: 800; letter-spacing: 1px; }
+.price-card-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 17px; }
+.price-kicker { color: var(--muted); font-size: 8px; font-weight: 800; letter-spacing: .9px; }
+.price-count { color: var(--blue); font-size: 8px; font-weight: 800; letter-spacing: .4px; white-space: nowrap; }
+.price-card h3 { font-size: 17px; line-height: 1.35; letter-spacing: -.5px; margin: 0 0 9px; }
+.price-description { min-height: 59px; color: var(--ink-soft); font-size: 11px; line-height: 1.7; margin-bottom: 20px; }
+.price-amount { display: flex; align-items: baseline; gap: 6px; padding-bottom: 14px; border-bottom: 1px solid #edf1f7; }
+.price-amount strong { font: 800 34px/1.2 Manrope, sans-serif; letter-spacing: -1.6px; }
+.price-amount span { font-size: 10px; color: var(--muted); }
+.per-lesson { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 5px; min-height: 27px; margin: 10px 0 7px; color: var(--ink-soft); font-size: 9px; }
+.per-lesson span { color: #0b8c69; background: #e6f8f0; padding: 3px 6px; border-radius: 6px; font-weight: 800; }
+.price-features { list-style: none; margin: 8px 0 22px; padding: 0; display: grid; gap: 12px; flex: 1; }
+.price-features li { position: relative; padding-left: 18px; color: #586980; font-size: 10px; line-height: 1.5; }
+.price-features li::before { content: '✓'; position: absolute; left: 0; top: -1px; color: #16956e; font-weight: 800; }
+.price-card .button { padding: 0 12px; min-height: 47px; gap: 8px; font-size: 10px; border-radius: 11px; white-space: nowrap; }
+.pricing-grid .price-card .button { background: #16834a; color: #ffffff; border: 1px solid #16834a; box-shadow: none; }
+.pricing-grid .price-card .button:hover { background: #10683a; color: #ffffff; border-color: #10683a; }
+.pricing-note { display: flex; align-items: start; gap: 9px; margin: 23px 0 0; color: #71809a; font-size: 11px; line-height: 1.7; }
+.pricing-note span { color: var(--blue); font-size: 14px; }
+
+.booking-band { color: white; background: linear-gradient(105deg,#123c9f 0%,#1d5ae0 58%,#2874ff 100%); padding: 54px 0; }
+.booking-band-inner { display: flex; align-items: center; justify-content: space-between; gap: 36px; }
+.booking-band h2 { margin-top: 9px; font-size: clamp(28px,3vw,38px); }
+.booking-band p { margin: 10px 0 0; max-width: 610px; color: rgba(255,255,255,.8); font-size: 13px; }
+.booking-band .eyebrow { color: #c4d8ff; }
+.booking-band .button { flex-shrink: 0; }
+
+.faq-section { padding-top: 105px; padding-bottom: 112px; }
+.faq-section .section-heading { margin-bottom: 30px; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-list details { border-bottom: 1px solid var(--line); }
+.faq-list summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 21px 0; color: var(--ink); font-size: 14px; font-weight: 700; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary span { color: var(--blue); font-size: 24px; font-weight: 400; transition: transform .2s ease; }
+.faq-list details[open] summary span { transform: rotate(45deg); }
+.faq-list details p { max-width: 790px; margin: -3px 0 22px; color: var(--ink-soft); font-size: 13px; line-height: 1.8; }
+
+.site-footer { background: #0d1931; color: white; }
+.footer-main { display: grid; grid-template-columns: 1.4fr .7fr .9fr 1fr; gap: 50px; padding-top: 64px; padding-bottom: 50px; }
+.brand-footer .brand-name { color: white; }
+.footer-brand-col > p { max-width: 290px; margin: 20px 0 0; color: #a9b6cf; font-size: 12px; line-height: 1.8; }
+.footer-links h3, .footer-contact h3 { margin: 5px 0 16px; font: 800 12px Manrope, sans-serif; }
+.footer-links a { display: block; margin: 10px 0; color: #a9b6cf; font-size: 11px; }
+.footer-contact p { color: #a9b6cf; font-size: 11px; line-height: 1.8; }
+.footer-contact .text-link { color: #9ebaff; margin-top: 3px; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 20px; align-items: center; border-top: 1px solid rgba(255,255,255,.13); padding-top: 18px; padding-bottom: 19px; color: #8291ad; font-size: 10px; }
+.footer-bottom a { color: #bdc9de; }
+
+.booking-dialog { width: min(720px, calc(100% - 28px)); max-height: min(92vh, 900px); overflow: auto; border: 1px solid #e2e8f3; border-radius: 22px; padding: 0; box-shadow: 0 30px 100px rgba(5,18,45,.36); color: var(--ink); background: white; }
+.booking-dialog::backdrop { background: rgba(8,22,48,.64); backdrop-filter: blur(5px); }
+.dialog-head { position: sticky; top: 0; z-index: 2; background: rgba(255,255,255,.97); backdrop-filter: blur(9px); display: flex; justify-content: space-between; gap: 20px; align-items: start; padding: 27px 30px 21px; border-bottom: 1px solid var(--line); }
+.dialog-head h2 { font-size: 26px; margin: 9px 0 7px; letter-spacing: -1px; line-height: 1.2; }
+.dialog-head p { color: var(--ink-soft); font-size: 12px; line-height: 1.7; margin: 0; max-width: 540px; }
+.dialog-close { flex: 0 0 auto; display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--line); border-radius: 11px; color: var(--ink); background: white; font-size: 25px; line-height: 1; }
+#booking-form { padding: 24px 30px 29px; }
+.form-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 7px; color: #253653; font-size: 11px; font-weight: 800; }
+.field-full { grid-column: 1 / -1; }
+.field input:not([type=checkbox]), .field select { width: 100%; min-height: 45px; border: 1px solid #dbe3ef; border-radius: 10px; padding: 0 12px; color: var(--ink); background: #fbfcfe; font-size: 12px; font-weight: 500; }
+.field input::placeholder { color: #9aa7b9; }
+.field select {
+  color: #111d35 !important;
+  -webkit-text-fill-color: #111d35;
+  background-color: #fbfcfe;
+  color-scheme: light;
+  opacity: 1;
+}
+.field select:hover,
+.field select:focus,
+.field select:active {
+  color: #111d35 !important;
+  -webkit-text-fill-color: #111d35;
+  background-color: #ffffff;
+}
+.field select option {
+  color: #111d35;
+  background-color: #ffffff;
+}
+.field select option:checked,
+.field select option:hover {
+  color: #111d35;
+  background-color: #e8f0ff;
+}
+.field select:disabled { color: #9aa7b9; }
+.field-hint { color: #8996a9; font-size: 10px; font-weight: 500; line-height: 1.5; }
+.check-field { flex-direction: row; align-items: start; gap: 10px; font-weight: 500; color: #67768d; line-height: 1.65; }
+.check-field input { width: 16px; height: 16px; flex-shrink: 0; accent-color: var(--blue); margin: 3px 0 0; }
+.check-field a { color: var(--blue-dark); text-decoration: underline; text-underline-offset: 2px; }
+.checkout-summary { display: grid; grid-template-columns: 1fr auto; gap: 1px 14px; margin-top: 22px; padding: 15px 17px; border-radius: 12px; background: #f0f5ff; }
+.checkout-summary > span { color: #667792; font-size: 11px; font-weight: 700; }
+.checkout-summary strong { color: #123577; font: 800 22px Manrope, sans-serif; }
+.checkout-summary small { color: #8290a5; font-size: 10px; }
+.checkout-summary small { grid-column: 1 / -1; }
+.form-disclaimer { margin: 13px 0; color: #7b899d; font-size: 10px; line-height: 1.7; }
+.form-message { margin: 8px 0; color: #b3261e; font-size: 12px; line-height: 1.6; }
+.form-message.is-success { color: #087c5b; }
+.form-message:empty { display: none; }
+.dialog-actions { display: grid; gap: 5px; margin-top: 12px; }
+
+.document-page { min-height: 70vh; padding-top: 74px; padding-bottom: 85px; }
+.document-page .document-copy { max-width: 830px; }
+.document-copy h1 { font-size: clamp(34px,4vw,49px); }
+.document-copy h2 { margin-top: 34px; font-size: 22px; }
+.document-copy p, .document-copy li { color: var(--ink-soft); font-size: 14px; line-height: 1.9; }
+.document-notice { padding: 14px 17px; border: 1px solid #f1d3a1; border-radius: 12px; background: #fff8ec; color: #805416; font-size: 12px; line-height: 1.7; }
+.status-panel { max-width: 680px; margin: 35px 0; padding: 30px; background: white; border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.status-mark { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 15px; background: #e7f7ee; color: #0c8a62; font-size: 23px; margin-bottom: 18px; }
+.status-panel h2 { margin: 0 0 8px; font-size: 24px; }
+.status-panel p { color: var(--ink-soft); font-size: 13px; line-height: 1.8; }
+.status-detail { color: var(--muted); font-size: 11px; margin-top: 16px; }
+
+@media (max-width: 1100px) {
+  .hero { gap: 36px; }
+  h1 { font-size: clamp(37px,4.6vw,52px); }
+  .hero-visual { min-height: 445px; padding: 22px; }
+  .study-sheet { margin-top: 40px; }
+  .method-layout { gap: 58px; }
+  .pricing-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+  .price-card { padding: 23px; }
+  .featured-label { margin: -23px -23px 19px; }
+  .price-description { min-height: auto; }
+  .price-card .button { font-size: 11px; }
+}
+@media (max-width: 800px) {
+  .wrap { width: min(100% - 42px, 650px); }
+  .section { padding-top: 80px; padding-bottom: 80px; }
+  .header-inner { min-height: 72px; }
+  .nav-toggle { display: inline-grid; place-items: center; }
+  .main-nav { display: none; position: absolute; left: 0; right: 0; top: 72px; padding: 20px 24px 24px; background: white; border-bottom: 1px solid var(--line); box-shadow: 0 14px 24px rgba(13,30,61,.08); align-items: stretch; gap: 0; }
+  .main-nav.is-open { display: flex; flex-direction: column; }
+  .main-nav > a { padding: 12px 0; }
+  .main-nav .button { margin-top: 9px; }
+  .brand-name { font-size: 21px; }
+  .hero { grid-template-columns: 1fr; gap: 38px; padding-top: 60px; padding-bottom: 64px; }
+  .hero-copy { max-width: 660px; }
+  h1 { max-width: 630px; font-size: clamp(38px,7vw,55px); }
+  .hero-visual { max-width: 580px; width: 100%; justify-self: center; min-height: 450px; }
+  .facts-grid { grid-template-columns: repeat(2,1fr); gap: 20px 14px; padding-top: 20px; padding-bottom: 20px; }
+  .fact:nth-child(3) { border-left: 0; padding-left: 0; }
+  .section-heading-split { display: block; }
+  .section-heading-split > p { margin-top: 17px; }
+  .subjects-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .subject-card:last-child { grid-column: 1 / -1; }
+  .method-layout { grid-template-columns: 1fr; gap: 46px; }
+  .method-intro p { max-width: 550px; }
+  .booking-band-inner { align-items: start; flex-direction: column; gap: 25px; }
+  .footer-main { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 36px 26px; }
+  .footer-bottom { flex-wrap: wrap; }
+}
+@media (max-width: 520px) {
+  .wrap { width: calc(100% - 36px); }
+  .brand { gap: 9px; }
+  .brand-mark { width: 31px; height: 31px; border-radius: 9px; }
+  .brand-name { font-size: 19px; }
+  .brand-subtitle { font-size: 8px; letter-spacing: 1.3px; }
+  .ticker-track { padding: 8px 0; font-size: 10px; gap: 26px; }
+  .ticker-track b { margin-left: 18px; }
+  .hero { padding-top: 48px; gap: 31px; }
+  h1 { margin-top: 20px; font-size: clamp(34px,9.4vw,45px); letter-spacing: -1.7px; }
+  .hero-lede { font-size: 14px; line-height: 1.8; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .button { width: 100%; }
+  .hero-price { margin-top: 23px; }
+  .hero-visual { min-height: 415px; padding: 17px; border-radius: 23px; }
+  .visual-topline { align-items: start; font-size: 7px; letter-spacing: .8px; }
+  .visual-live { font-size: 6px; letter-spacing: .4px; }
+  .study-sheet { margin-top: 42px; padding: 16px; width: min(100%, 350px); }
+  .equation { font-size: 28px; }
+  .note-one { display: none; }
+  .note-two { right: 2px; bottom: 46px; transform: scale(.87); transform-origin: right center; }
+  .visual-foot { margin-top: 27px; font-size: 7px; }
+  .facts-grid { gap: 16px 9px; }
+  .fact { gap: 9px; padding-left: 12px; }
+  .fact-icon { width: 31px; height: 31px; border-radius: 9px; font-size: 16px; }
+  .fact strong { font-size: 11px; }
+  .fact small { font-size: 9px; }
+  .section { padding-top: 67px; padding-bottom: 67px; }
+  .section-heading { margin-bottom: 28px; }
+  .section-heading h2, .method-intro h2 { font-size: 32px; letter-spacing: -1.3px; }
+  .section-heading-split > p { font-size: 12px; }
+  .level-switch { flex-wrap: wrap; gap: 7px; }
+  .switch-label { flex-basis: 100%; margin-bottom: 2px; }
+  .level-button { padding: 8px 10px; font-size: 10px; }
+  .subjects-grid { grid-template-columns: 1fr; gap: 12px; }
+  .subject-card, .subject-card:last-child { grid-column: auto; min-height: 225px; padding: 21px; }
+  .subject-top { margin-bottom: 19px; }
+  .method-section { padding: 70px 0; }
+  .method-step { grid-template-columns: 27px 1fr 16px; gap: 12px; padding: 21px 0; }
+  .method-step h3 { font-size: 14px; }
+  .method-step p { font-size: 11px; }
+  .pricing-grid { grid-template-columns: 1fr; gap: 15px; }
+  .price-card { padding: 23px; }
+  .featured-label { margin: -23px -23px 19px; }
+  .price-card h3 { font-size: 19px; }
+  .price-description { font-size: 12px; margin-bottom: 16px; }
+  .price-amount strong { font-size: 37px; }
+  .price-features li { font-size: 11px; }
+  .price-card .button { min-height: 49px; font-size: 11px; }
+  .pricing-note { font-size: 10px; }
+  .booking-band { padding: 42px 0; }
+  .booking-band h2 { font-size: 30px; letter-spacing: -1.3px; }
+  .booking-band p { font-size: 12px; }
+  .faq-list summary { gap: 16px; padding: 18px 0; font-size: 12px; }
+  .faq-list details p { font-size: 11px; }
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 31px 18px; padding-top: 47px; padding-bottom: 36px; }
+  .footer-brand-col { grid-column: 1 / -1; }
+  .footer-bottom { gap: 10px 18px; font-size: 9px; }
+  .footer-bottom span:nth-child(2) { display: none; }
+  .dialog-head { padding: 22px 20px 18px; }
+  .dialog-head h2 { font-size: 23px; }
+  #booking-form { padding: 21px 20px 24px; }
+  .form-grid { grid-template-columns: 1fr; gap: 13px; }
+  .field-full { grid-column: auto; }
+  .document-page { padding-top: 48px; padding-bottom: 60px; }
+  .status-panel { padding: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+
+:root {
+  --site-primary: #2874FF;
+  --site-on-primary: #FFFFFF;
+  --site-secondary: #101F3D;
+  --site-on-secondary: #FFFFFF;
+  --site-background: #F7F9FC;
+  --site-on-background: #111D35;
+  --site-font-body: 'DM Sans', Arial, sans-serif;
+  --site-font-heading: Manrope, 'DM Sans', Arial, sans-serif;
+  --site-heading-scale: 1;
+  --site-spacing-scale: 1;
+  --site-radius-scale: 1;
+  --site-decoration-opacity: 1;
+}
+body { background-color: light-dark(var(--site-background), #0D1422); font-family: var(--site-font-body); }
+.site-shell { min-height: 100vh; border-radius: 0; background-color: light-dark(var(--site-background), #0D1422); color: light-dark(var(--site-on-background), #EDF3FF); }
+h1, h2, h3 { font-family: var(--site-font-heading); }
+.button-primary { background-color: var(--site-primary); color: var(--site-on-primary); }
+.method-section, .site-footer { background-color: var(--site-secondary); color: var(--site-on-secondary); }
+.hero-visual::before, .hero-visual::after, .visual-glow, .method-section::before { opacity: var(--site-decoration-opacity); }
+h1 { font-size: calc(clamp(37px, 4.15vw, 58px) * var(--site-heading-scale)); }
+.section-heading h2, .method-intro h2 { font-size: calc(clamp(31px, 3.1vw, 44px) * var(--site-heading-scale)); }
+.section { padding-top: calc(112px * var(--site-spacing-scale)); padding-bottom: calc(112px * var(--site-spacing-scale)); }
+.hero { gap: calc(62px * var(--site-spacing-scale)); }
+.subject-card { border-radius: calc(18px * var(--site-radius-scale)); }
+.price-card { border-radius: calc(18px * var(--site-radius-scale)); }
+.booking-dialog { border-radius: calc(22px * var(--site-radius-scale)); }
+@media (max-width: 1100px) { .hero { gap: calc(36px * var(--site-spacing-scale)); } }
+@media (max-width: 800px) {
+  .section { padding-top: calc(80px * var(--site-spacing-scale)); padding-bottom: calc(80px * var(--site-spacing-scale)); }
+  .hero { gap: calc(38px * var(--site-spacing-scale)); }
+  h1 { font-size: calc(clamp(37px, 7vw, 55px) * var(--site-heading-scale)); }
+}
+@media (max-width: 520px) {
+  .section { padding-top: calc(67px * var(--site-spacing-scale)); padding-bottom: calc(67px * var(--site-spacing-scale)); }
+  .hero { gap: calc(31px * var(--site-spacing-scale)); }
+  h1 { font-size: calc(clamp(34px, 9.4vw, 45px) * var(--site-heading-scale)); }
+  .section-heading h2, .method-intro h2 { font-size: calc(32px * var(--site-heading-scale)); }
+}
+
+/* Rifinitura editoriale: più spazio bianco, meno effetti e testo ad alto contrasto. */
+:root {
+  --ink: #111d35;
+  --ink-soft: #465a75;
+  --muted: #6b7c94;
+  --blue: #2f75f8;
+  --blue-dark: #174fc4;
+  --paper: #f7f9fc;
+  --line: #e3e9f2;
+  --radius: 16px;
+  --shadow: 0 12px 36px rgba(25, 54, 103, .06);
+}
+body { font-size: 15px; }
+.wrap { width: min(1180px, calc(100% - 56px)); }
+.site-header { background: #fff; backdrop-filter: none; }
+.header-inner { min-height: 72px; }
+.main-nav { gap: 27px; }
+.ticker { background: #eaf1ff; }
+.ticker-track { padding: 8px 0; animation-duration: 50s; font-weight: 600; }
+.hero { gap: 48px; padding-top: 65px; padding-bottom: 68px; }
+h1 { max-width: 680px; font-size: clamp(38px, 4.05vw, 55px); line-height: 1.14; letter-spacing: -1.9px; }
+.hero-lede { font-size: 16px; line-height: 1.8; }
+.button { border-radius: 10px; box-shadow: none; }
+.button-primary { box-shadow: 0 5px 14px rgba(40,116,255,.12); }
+.button-primary:hover { box-shadow: 0 7px 18px rgba(40,116,255,.16); }
+.hero-visual { min-height: 450px; border-radius: 20px; box-shadow: none; padding: 24px; }
+.hero-visual::before { opacity: .55; }
+.hero-visual::after { opacity: .25; }
+.visual-glow { opacity: .2; }
+.study-sheet { border-radius: 14px; box-shadow: 0 12px 30px rgba(0,20,70,.14); transform: none; }
+.floating-note { border: 1px solid rgba(227,233,242,.9); box-shadow: 0 8px 20px rgba(3,20,60,.12); }
+.quick-facts { background: #fff; }
+.subject-card { border-radius: 14px; box-shadow: none; }
+.subject-card:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(31,63,118,.05); }
+.method-section { background: #eef3fb; color: var(--ink); }
+.method-section::before { opacity: .22; }
+.method-intro p, .method-step p { color: #465a75; }
+.method-step { border-color: rgba(16,31,61,.12); }
+.method-step h3 { color: #111d35; }
+.step-number, .step-arrow { color: #2f67d5; }
+.eyebrow-light { color: #2455b0; }
+.method-intro h2 span { color: #245fd9; }
+.method-intro .button-light { border: 1px solid #d5e0f1; background: #fff; color: #18325e; }
+.pricing-grid { gap: 15px; }
+.price-card { border-radius: 14px; box-shadow: none; }
+.price-card-featured { border-color: #9dbbfa; box-shadow: 0 6px 20px rgba(40,116,255,.06); }
+.featured-label { letter-spacing: .7px; }
+.booking-band { background: #eaf1ff; color: var(--ink); }
+.booking-band p { color: #465a75; }
+.booking-band .eyebrow { color: #2455b0; }
+.booking-band .button-light { color: #fff; background: var(--blue); }
+.booking-band .button-light:hover { background: var(--blue-dark); }
+.faq-section { background: #fff; }
+.faq-section .section-heading { margin-bottom: 27px; }
+.faq-list { border-top-color: #dce4ef; }
+.faq-list details { border-bottom-color: #dce4ef; }
+.faq-list summary { color: #111d35; font-size: 15px; line-height: 1.55; padding: 20px 0; }
+.faq-list details p { display: block; max-width: 820px; margin: 0 0 23px; color: #354963; font-size: 14px; line-height: 1.85; }
+.faq-list details[open] summary span { transform: none; font-size: 0; }
+.faq-list details[open] summary span::after { content: '−'; font-size: 24px; }
+.resources-section { padding-top: 76px; padding-bottom: 82px; }
+.resources-section .section-heading { margin-bottom: 28px; }
+.resources-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 28px; border-top: 1px solid var(--line); }
+.resource-card { padding: 24px 0 10px; border-bottom: 1px solid var(--line); }
+.resource-label { display: block; margin-bottom: 11px; color: var(--blue-dark); font-size: 10px; font-weight: 800; letter-spacing: 1.1px; }
+.resource-card h3 { margin: 0 0 9px; font-size: 18px; line-height: 1.4; letter-spacing: -.35px; }
+.resource-card p { margin: 0 0 17px; color: #465a75; font-size: 13px; line-height: 1.8; }
+.resource-card strong { color: #263b59; }
+.footer-main { gap: 36px; }
+.document-copy p, .document-copy li { color: #354963; }
+@media (max-width: 800px) {
+  .wrap { width: min(100% - 42px, 650px); }
+  .resources-grid { grid-template-columns: 1fr; gap: 0; }
+  .hero { gap: 36px; }
+  .method-section { padding: 75px 0; }
+}
+@media (max-width: 520px) {
+  .wrap { width: calc(100% - 36px); }
+  h1 { font-size: clamp(34px, 9vw, 44px); }
+  .hero-visual { min-height: 405px; }
+  .faq-list summary { font-size: 14px; }
+  .faq-list details p { font-size: 13px; }
+}
+
+/* Contrasto robusto tra superfici chiare e sfondi scuri del tema. */
+.site-header {
+  color: #111d35;
+  background: #ffffff;
+}
+.site-header .brand-name,
+.site-header .main-nav,
+.site-header .main-nav a,
+.site-header .nav-toggle {
+  color: #111d35;
+}
+.site-header .brand-subtitle {
+  color: #647794;
+}
+.quick-facts,
+.subject-card,
+.price-card,
+.booking-dialog,
+.status-panel,
+.study-sheet {
+  color: #111d35;
+}
+.fact strong,
+.subject-card h3,
+.price-card h3,
+.price-amount strong {
+  color: #111d35;
+  font-variant: normal;
+  font-variant-caps: normal;
+  text-transform: none;
+  font-stretch: normal;
+}
+.price-card .price-kicker,
+.price-card .price-description,
+.price-card .per-lesson,
+.price-card .price-features li,
+.price-amount span {
+  color: #465a75;
+  font-variant: normal;
+  font-variant-caps: normal;
+  text-transform: none;
+}
+.price-amount strong {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+.section-heading h2,
+.section-heading-split > p,
+.resource-card h3,
+.resource-card p {
+  font-variant: normal;
+  font-variant-caps: normal;
+  text-transform: none;
+}
+.section-heading h2 {
+  color: light-dark(#111d35, #edf3ff);
+}
+.section-heading-split > p {
+  color: light-dark(#465a75, #c2cde0);
+}
+.resources-section {
+  background-color: light-dark(var(--site-background), #0d1422);
+}
+.resource-card h3 {
+  color: light-dark(#111d35, #edf3ff);
+}
+.resource-card p {
+  color: light-dark(#465a75, #c2cde0);
+}
+.resource-card strong {
+  color: light-dark(#263b59, #edf3ff);
+}
+.faq-section {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: light-dark(var(--site-background), #0d1422);
+  color: light-dark(#111d35, #edf3ff);
+}
+.faq-list {
+  border-top-color: light-dark(#dce4ef, #344158);
+}
+.faq-list details {
+  border-bottom-color: light-dark(#dce4ef, #344158);
+}
+.faq-list summary {
+  color: light-dark(#111d35, #edf3ff);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-variant: normal;
+  font-variant-caps: normal;
+  font-stretch: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.6;
+}
+.faq-list details p {
+  color: light-dark(#354963, #c2cde0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-variant: normal;
+  font-variant-caps: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.8;
+}
+.document-page {
+  color: light-dark(#111d35, #edf3ff);
+}
+.document-copy p,
+.document-copy li {
+  color: light-dark(#354963, #c2cde0);
+}
+@media (max-width: 800px) {
+  .faq-section > .wrap {
+    width: min(100% - 42px, 650px);
+  }
+}
+@media (max-width: 520px) {
+  .faq-section > .wrap {
+    width: calc(100% - 36px);
+  }
+  .price-amount strong {
+    font-size: 35px;
+  }
+}
+
+/* Pagine informative e area clienti: stesso tema, contrasto e contenitore. */
+.secondary-page { display: none; }
+.site-shell:not([data-view="home"]) main > section:not(.secondary-page) { display: none; }
+.site-shell[data-view="privacy"] #privacy-page,
+.site-shell[data-view="termini"] #termini-page,
+.site-shell[data-view="area-clienti"] #area-clienti-page { display: block; }
+.secondary-page { min-height: 65vh; background: light-dark(#f7f9fc, #0d1422); }
+.secondary-page .document-copy { max-width: 850px; margin: 0 auto; padding: 30px; border: 1px solid light-dark(#e3e9f2, #344158); border-radius: 18px; background: light-dark(#ffffff, #141f32); }
+.secondary-page .document-copy h1 { max-width: none; color: light-dark(#111d35, #edf3ff); font-size: clamp(32px, 4vw, 46px); line-height: 1.2; letter-spacing: -1.3px; font-variant: normal; text-transform: none; }
+.secondary-page .document-copy h2 { margin-top: 27px; color: light-dark(#111d35, #edf3ff); font-size: 20px; line-height: 1.4; font-variant: normal; text-transform: none; }
+.secondary-page .document-copy p,
+.secondary-page .document-copy li { color: light-dark(#354963, #c2cde0); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.85; font-variant: normal; text-transform: none; }
+.secondary-page .document-copy ul { padding-left: 22px; }
+.secondary-page .document-copy a { color: light-dark(#174fc4, #9ebaff); text-decoration: underline; text-underline-offset: 3px; }
+.page-notice { margin: 20px 0 26px; padding: 15px 17px; border: 1px solid light-dark(#e6cb8b, #80683a); border-radius: 12px; background: light-dark(#fff8e9, #332a1c); color: light-dark(#704b0d, #f4d89c); font-size: 13px; line-height: 1.75; }
+.page-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.secondary-page .document-copy .page-actions a.button, .secondary-page .document-copy .page-actions a.button.button-primary, .secondary-page .document-copy .page-actions a.button.button-secondary { background: #ffffff !important; color: #000000 !important; border: 1px solid #000000 !important; box-shadow: none !important; text-decoration: none; }
+.secondary-page .document-copy .page-actions a.button:hover, .secondary-page .document-copy .page-actions a.button:focus-visible { background: #000000 !important; color: #ffffff !important; border-color: #000000 !important; }
+@media (max-width: 520px) {
+  .secondary-page .document-copy { padding: 21px 18px; border-radius: 14px; }
+  .secondary-page .document-copy p,
+  .secondary-page .document-copy li { font-size: 13px; }
+}
+
+  </style>
+  <script>window.SITE_CONFIG = { apiBaseUrl: "", contactEmail: "", onlineLessonsEnabled: true, inPersonLessonsEnabled: false, serviceArea: "" };</script>
+</head>
+<body>
+  <div class="site-shell" id="top" data-view="home">
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="brand" href="#top" data-home-link aria-label="ZFIERIZ, pagina iniziale">
+          <span class="brand-name">ZFIERIZ<span class="brand-subtitle">RIPETIZIONI PERSONALIZZATE</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Apri il menu">☰</button>
+        <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
+          <a href="#materie">Materie</a>
+          <a href="#metodo">Metodi</a>
+          <a href="#prezzi">Prezzi</a>
+          <a href="#faq">Domande frequenti</a>
+          <button class="button button-small button-primary" type="button" data-open-booking data-package="single">PRENOTA UNA LEZIONE <span aria-hidden="true">↗</span></button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> UN PERCORSO FATTO SU DI TE</div>
+          <h1 id="hero-title">RAGGIUNGI I TUOI OBIETTIVI SCOLASTICI, <span>UNA LEZIONE ALLA VOLTA.</span></h1>
+          <p class="hero-lede">Ripetizioni personalizzate per studenti delle scuole medie e superiori. Spiegazioni chiare, esercizi guidati e un percorso di studio adattato alle tue esigenze.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" type="button" data-open-booking data-package="single">PRENOTA UNA LEZIONE <span aria-hidden="true">↗</span></button>
+            <a class="button button-secondary" href="#prezzi">SCOPRI I PACCHETTI <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-price"><span class="price-icon" aria-hidden="true">€</span><span><strong>Da 15 € / 60 minuti</strong><small>Prezzo singolo, pacchetti disponibili a tariffa ridotta.</small></span></div>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustrazione di un piano di studio con esercizi e appunti">
+          <div class="visual-glow"></div>
+          <div class="visual-topline"><span>IL TUO PROSSIMO PASSO</span><span class="visual-live"><i></i> PERCORSO PERSONALIZZATO</span></div>
+          <div class="study-sheet">
+            <div class="sheet-head"><span class="sheet-tag">ESEMPIO DI ESERCIZIO</span><span class="sheet-index">01 / 03</span></div>
+            <p class="sheet-question">Risolvi l'equazione</p>
+            <div class="equation">2x + 4 = 12</div>
+            <div class="equation-step"><span>01</span><span>2x = 12 − 4</span><span class="step-check">✓</span></div>
+            <div class="equation-step"><span>02</span><span>2x = 8</span><span class="step-check">✓</span></div>
+            <div class="equation-step equation-final"><span>03</span><span>x = 4</span><span class="step-check">✓</span></div>
+            <div class="sheet-note"><span class="note-sparkle">✳</span><span><b>Capire, non imparare a memoria.</b><small>Ogni passaggio ha una ragione.</small></span></div>
+          </div>
+          <div class="floating-note note-one"><span class="note-symbol">↗</span><span><b>Un passo alla volta</b><small>Obiettivi chiari e realistici</small></span></div>
+          <div class="floating-note note-two"><span class="note-symbol note-symbol-light">✓</span><span><b>Spiegazioni guidate</b><small>Teoria + pratica</small></span></div>
+          <div class="visual-foot"><span>METODO</span><span>CHIAREZZA</span><span>COSTANZA</span></div>
+        </div>
+      </section>
+
+      <section class="quick-facts" aria-label="Informazioni principali">
+        <div class="wrap facts-grid">
+          <div class="fact"><span class="fact-icon">◷</span><span><strong>60 minuti</strong><small>Per ogni lezione</small></span></div>
+          <div class="fact"><span class="fact-icon">◎</span><span><strong>5 materie</strong><small>Per medie e superiori</small></span></div>
+          <div class="fact"><span class="fact-icon">↗</span><span><strong>Da 15 €</strong><small>Pacchetti con risparmio</small></span></div>
+          <div class="fact"><span class="fact-icon">⌁</span><span><strong>Su misura</strong><small>In base alle tue esigenze</small></span></div>
+        </div>
+      </section>
+
+      <section class="section wrap" id="materie" aria-labelledby="subjects-title">
+        <div class="section-heading section-heading-split">
+          <div><div class="eyebrow">LE MATERIE</div><h2 id="subjects-title">Le basi solide fanno <span>la differenza.</span></h2></div>
+          <p>Scegli la materia su cui vuoi lavorare. Il percorso parte dal tuo livello, dai dubbi che hai e dagli obiettivi che vuoi raggiungere.</p>
+        </div>
+        <div class="level-switch" role="group" aria-label="Seleziona il livello scolastico">
+          <span class="switch-label">IL TUO LIVELLO</span>
+          <button class="level-button is-active" type="button" data-level="medie" aria-pressed="true">Scuola media</button>
+          <button class="level-button" type="button" data-level="superiori" aria-pressed="false">Scuola superiore</button>
+        </div>
+        <div class="subjects-grid">
+          <article class="subject-card subject-math">
+            <div class="subject-top"><span class="subject-number">01</span><span class="subject-symbol" aria-hidden="true">∑</span></div>
+            <h3>Matematica</h3>
+            <p data-copy="math">Aritmetica, frazioni, proporzioni e problemi spiegati passo dopo passo.</p>
+            <a href="#prenotazione" class="text-link" data-open-booking data-subject="Matematica">Studia matematica <span>↗</span></a>
+          </article>
+          <article class="subject-card subject-italian">
+            <div class="subject-top"><span class="subject-number">02</span><span class="subject-symbol" aria-hidden="true">Aa</span></div>
+            <h3>Italiano</h3>
+            <p>Grammatica, scrittura, comprensione del testo e letteratura.</p>
+            <a href="#prenotazione" class="text-link" data-open-booking data-subject="Italiano">Studia italiano <span>↗</span></a>
+          </article>
+          <article class="subject-card subject-english">
+            <div class="subject-top"><span class="subject-number">03</span><span class="subject-symbol" aria-hidden="true">Ab</span></div>
+            <h3>Inglese</h3>
+            <p>Grammatica, vocabolario, lettura, scrittura ed esercizi scolastici.</p>
+            <a href="#prenotazione" class="text-link" data-open-booking data-subject="Inglese">Studia inglese <span>↗</span></a>
+          </article>
+          <article class="subject-card subject-history">
+            <div class="subject-top"><span class="subject-number">04</span><span class="subject-symbol" aria-hidden="true">◷</span></div>
+            <h3>Storia</h3>
+            <p>Eventi, cronologie, mappe concettuali e preparazione alle verifiche.</p>
+            <a href="#prenotazione" class="text-link" data-open-booking data-subject="Storia">Studia storia <span>↗</span></a>
+          </article>
+          <article class="subject-card subject-tech">
+            <div class="subject-top"><span class="subject-number">05</span><span class="subject-symbol" aria-hidden="true">print(hello)</span></div>
+            <h3>Informatica</h3>
+            <p>Competenze digitali, basi di programmazione e teoria scolastica.</p>
+            <a href="#prenotazione" class="text-link" data-open-booking data-subject="Informatica">Studia informatica <span>↗</span></a>
+          </article>
+        </div>
+        <p class="level-note" id="level-note" aria-live="polite">Percorso per la scuola media: partiamo dalle basi e costruiamo sicurezza con esercizi guidati.</p>
+      </section>
+
+      <section class="method-section" id="metodo" aria-labelledby="method-title">
+        <div class="wrap method-layout">
+          <div class="method-intro"><div class="eyebrow eyebrow-light">I METODI</div><h2 id="method-title">Meno confusione.<br><span>Più comprensione.</span></h2><p>Non serve fare tutto in una volta. Serve capire da dove partire, procedere con ordine e allenarsi con costanza.</p><button class="button button-light" type="button" data-open-booking data-package="single">Iniziamo da qui <span aria-hidden="true">↗</span></button></div>
+          <div class="method-steps">
+            <article class="method-step"><span class="step-number">01</span><div><h3>Individuiamo le difficoltà</h3><p>Partiamo dagli argomenti poco chiari e dagli obiettivi scolastici più urgenti.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
+            <article class="method-step"><span class="step-number">02</span><div><h3>Spieghiamo in modo semplice</h3><p>Rendiamo i concetti più accessibili, con esempi concreti e passaggi ordinati.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
+            <article class="method-step"><span class="step-number">03</span><div><h3>Facciamo esercizi insieme</h3><p>Applichiamo la teoria, correggiamo gli errori e capiamo come evitarli.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
+            <article class="method-step"><span class="step-number">04</span><div><h3>Rivediamo i progressi</h3><p>Facciamo il punto su ciò che è più chiaro e sulle prossime priorità.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section wrap pricing-section" id="prezzi" aria-labelledby="pricing-title">
+        <div class="section-heading section-heading-split">
+          <div><div class="eyebrow">PREZZI TRASPARENTI</div><h2 id="pricing-title">Investi nel tuo <span>prossimo passo.</span></h2></div>
+          <p>Tutte le lezioni durano 60 minuti. Più lezioni scegli, più si riduce il costo di ogni incontro.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <div class="price-card-head"><span class="price-kicker">PER COMINCIARE</span><span class="price-count">01 LEZIONE</span></div>
+            <h3>Lezione singola</h3><p class="price-description">Una sessione per affrontare un argomento specifico.</p>
+            <div class="price-amount"><strong>15 €</strong><span>/ lezione</span></div>
+            <ul class="price-features"><li>1 lezione da 60 minuti</li><li>Un argomento su cui concentrarsi</li><li>Obiettivi concordati prima dell'incontro</li></ul>
+            <button class="button button-primary button-full" type="button" data-open-booking data-package="single">ACQUISTA UNA LEZIONE <span>↗</span></button>
+          </article>
+          <article class="price-card">
+            <div class="price-card-head"><span class="price-kicker">PER PRENDERE IL RITMO</span><span class="price-count">05 LEZIONI</span></div>
+            <h3>Pacchetto 5 lezioni</h3><p class="price-description">Più tempo per esercitarsi e consolidare le basi.</p>
+            <div class="price-amount"><strong>69 €</strong><span>/ pacchetto</span></div>
+            <p class="per-lesson">13,80 € a lezione <span>Risparmi 6 €</span></p>
+            <ul class="price-features"><li>5 lezioni da 60 minuti</li><li>Percorso su argomenti concordati</li><li>Risparmio rispetto alle singole lezioni</li></ul>
+            <button class="button button-primary button-full" type="button" data-open-booking data-package="pack5">SCEGLI 5 LEZIONI <span>↗</span></button>
+          </article>
+          <article class="price-card price-card-featured">
+            <div class="featured-label">OTTIMO RAPPORTO QUALITÀ-PREZZO</div>
+            <div class="price-card-head"><span class="price-kicker">PER STUDIARE CON COSTANZA</span><span class="price-count">10 LEZIONI</span></div>
+            <h3>Pacchetto 10 lezioni</h3><p class="price-description">Un percorso più continuativo per lavorare con metodo.</p>
+            <div class="price-amount"><strong>129 €</strong><span>/ pacchetto</span></div>
+            <p class="per-lesson">12,90 € a lezione <span>Risparmi 21 €</span></p>
+            <ul class="price-features"><li>10 lezioni da 60 minuti</li><li>Più spazio per pratica e ripasso</li><li>Risparmio rispetto alle singole lezioni</li></ul>
+            <button class="button button-primary button-full" type="button" data-open-booking data-package="pack10">SCEGLI 10 LEZIONI <span>↗</span></button>
+          </article>
+          <article class="price-card">
+            <div class="price-card-head"><span class="price-kicker">PER UN PERCORSO AMPIO</span><span class="price-count">20 LEZIONI</span></div>
+            <h3>Pacchetto 20 lezioni</h3><p class="price-description">Un piano di lavoro esteso, da organizzare insieme.</p>
+            <div class="price-amount"><strong>239 €</strong><span>/ pacchetto</span></div>
+            <p class="per-lesson">11,95 € a lezione <span>Risparmi 61 €</span></p>
+            <ul class="price-features"><li>20 lezioni da 60 minuti</li><li>Studio distribuito nel tempo</li><li>Il costo per lezione più basso</li></ul>
+            <button class="button button-primary button-full" type="button" data-open-booking data-package="pack20">SCEGLI 20 LEZIONI <span>↗</span></button>
+          </article>
+        </div>
+        <p class="pricing-note"><span aria-hidden="true">ⓘ</span> Il pagamento viene effettuato direttamente tramite Stripe. La data e l'ora indicate sono preferenze: la lezione viene confermata manualmente dopo la verifica del pagamento e il contatto con il tutor.</p>
+      </section>
+
+      <section class="booking-band" id="prenotazione" aria-labelledby="booking-band-title">
+        <div class="wrap booking-band-inner"><div><div class="eyebrow eyebrow-light">IL PRIMO PASSO</div><h2 id="booking-band-title">Hai un argomento da chiarire?</h2><p>Raccontaci su cosa vuoi lavorare: invia la richiesta e scegli la soluzione adatta a te.</p></div><button class="button button-light" type="button" data-open-booking data-package="single">RICHIEDI UNA LEZIONE <span aria-hidden="true">↗</span></button></div>
+      </section>
+
+      <section class="section wrap resources-section" id="risorse" aria-labelledby="resources-title">
+        <div class="section-heading section-heading-split"><div><div class="eyebrow">RISORSE GRATUITE</div><h2 id="resources-title">Piccoli metodi, <span>grandi basi.</span></h2></div><p>Consigli pratici da provare durante lo studio, anche in autonomia. Scegli un punto da cui cominciare e applicalo al prossimo argomento.</p></div>
+        <div class="resources-grid">
+          <article class="resource-card"><span class="resource-label">01 / MATEMATICA</span><h3>Come affrontare un esercizio senza bloccarsi</h3><p>Leggi la consegna due volte e sottolinea i dati utili. Scrivi cosa devi trovare, scegli la regola che collega i dati e risolvi un passaggio alla volta. Alla fine, controlla se il risultato ha senso rispetto alla domanda.</p><p><strong>Prova:</strong> prima di guardare una soluzione, annota il punto preciso in cui non sai come procedere.</p></article>
+          <article class="resource-card"><span class="resource-label">02 / STORIA</span><h3>Costruire una mappa concettuale utile</h3><p>Metti al centro l'evento o il periodo da studiare. Collega cause, passaggi principali e conseguenze con parole chiave, non con interi paragrafi. Aggiungi le date solo quando aiutano a capire l'ordine degli avvenimenti.</p><p><strong>Prova:</strong> chiudi il libro e usa la mappa per spiegare l'argomento con parole tue.</p></article>
+          <article class="resource-card"><span class="resource-label">03 / INGLESE</span><h3>Memorizzare il lessico nel contesto</h3><p>Raggruppa le parole per tema e crea una frase semplice per ciascuna. Ripassa dopo un giorno e poi dopo alcuni giorni, provando a ricordare il significato prima di rileggere la traduzione. Inserisci le parole difficili in esempi vicini alla tua vita quotidiana.</p><p><strong>Prova:</strong> scrivi cinque frasi brevi usando le parole nuove senza copiare gli esempi del libro.</p></article>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="wrap">
+        <div class="section-heading"><div class="eyebrow">FAQ</div><h2 id="faq-title">Le risposte, senza <span>giri di parole.</span></h2></div>
+        <div class="faq-list">
+          <details><summary>Per quali studenti sono pensate le lezioni?<span>+</span></summary><p>Per studenti delle scuole medie e superiori. Il livello scolastico viene richiesto nel modulo, così da orientare il percorso sugli argomenti pertinenti.</p></details>
+          <details><summary>Come scelgo la materia e il pacchetto?<span>+</span></summary><p>Nel modulo seleziona materia, livello, formato, data e orario preferiti e il prodotto. Prima del pagamento puoi controllare la tua scelta.</p></details>
+          <details><summary>La prenotazione è confermata subito?<span>+</span></summary><p>No. Il modulo raccoglie una richiesta e una preferenza di orario, non una disponibilità in tempo reale. La data e l'ora devono essere confermate manualmente.</p></details>
+          <details><summary>Come si svolgono le lezioni?<span>+</span></summary><p>Il formato online è selezionabile se attivato nella configurazione del sito. Le lezioni in presenza restano disattivate finché non vengono definiti disponibilità e area di servizio.</p></details>
+          <details><summary>Come funzionano i pacchetti e i crediti?<span>+</span></summary><p>Ogni pacchetto comprende il numero di lezioni indicato, da 60 minuti. I crediti vengono registrati nel database solo dopo la verifica del pagamento da parte del server; in questa prima versione non è ancora disponibile un'area personale.</p></details>
+          <details><summary>Qual è la politica di modifica o cancellazione?<span>+</span></summary><p>La richiesta di prenotazione non equivale a una conferma. Per cambiare una lezione, contatta il tutor con almeno 24 ore di anticipo. Regole definitive per recuperi e rimborsi devono essere approvate dal titolare e mostrate prima del pagamento.</p></details>
+          <details><summary>Posso pagare con carta in sicurezza?<span>+</span></summary><p>Sì, quando il backend è attivo il pagamento avviene sulla pagina sicura di Stripe. Il sito non raccoglie né memorizza i dati completi della carta.</p></details>
+        </div>
+        </div>
+      </section>
+
+      <section class="section document-page secondary-page" id="area-clienti-page" aria-labelledby="area-clienti-title">
+        <div class="wrap"><article class="document-copy">
+          <div class="eyebrow">IL TUO PERCORSO DI STUDIO</div>
+          <h1 id="area-clienti-title">Area clienti</h1>
+          <div class="page-notice">AREA PERSONALE NON ANCORA ATTIVA IN QUESTA ANTEPRIMA. NON È POSSIBILE ACCEDERE A UN ACCOUNT, CONSULTARE CREDITI REALI O MODIFICARE PRENOTAZIONI DA QUESTA PAGINA.</div>
+          <p>Stiamo predisponendo un'area in cui i clienti potranno consultare le informazioni relative alle proprie richieste e alle lezioni confermate.</p>
+          <h2>Cosa sarà disponibile</h2>
+          <ul><li>Visualizzare i pacchetti acquistati e i crediti residui registrati dal sistema.</li><li>Consultare le date delle lezioni confermate.</li><li>Inviare richieste di modifica o riprogrammazione.</li><li>Leggere le condizioni di prenotazione e cancellazione.</li></ul>
+          <h2>Sicurezza degli acquisti</h2>
+          <p>I crediti dovranno essere assegnati esclusivamente dal server dopo la verifica del pagamento; non potranno essere aumentati o modificati manualmente dall'utente. Per proteggere le informazioni personali, la versione completa richiederà un sistema di autenticazione e autorizzazioni adeguato.</p>
+          <h2>Hai già inviato una richiesta?</h2>
+          <p>In questa anteprima il modulo non invia richieste e non vengono creati acquisti reali. Quando il servizio sarà attivo, il titolare pubblicherà i recapiti per ricevere conferme e assistenza.</p>
+          <div class="page-actions"><a class="button button-primary" href="#top" data-home-link>Torna alla pagina iniziale</a><a class="button button-secondary" href="condizioni-e-cancellazioni.html">Leggi le condizioni</a></div>
+        </article></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-main">
+        <div class="footer-brand-col"><a class="brand brand-footer" href="#top" data-home-link aria-label="ZFIERIZ, pagina iniziale"><span class="brand-name">ZFIERIZ<span class="brand-subtitle">RIPETIZIONI PERSONALIZZATE</span></span></a><p>Spiegazioni chiare. Esercizi guidati. Un metodo per fare progressi, una lezione alla volta.</p></div>
+        <div class="footer-links"><h3>Esplora</h3><a href="#materie">Materie</a><a href="#metodo">Metodi</a><a href="#prezzi">Prezzi</a><a href="#faq">Domande frequenti</a></div>
+        <div class="footer-links"><h3>Informazioni</h3><a href="privacy-policy.html">Informativa privacy</a><a href="condizioni-e-cancellazioni.html">Condizioni e cancellazioni</a><a href="#area-clienti" data-page-link="area-clienti">Area clienti</a></div>
+        <div class="footer-contact"><h3>Contatti</h3><p data-contact-display>Contatti da configurare prima del lancio.</p><a class="text-link" data-contact-link href="#prenotazione">Scrivici <span>↗</span></a></div>
+      </div>
+      <div class="wrap footer-bottom"><span>© <span id="year"></span> ZFIERIZ</span><span>Un percorso di studio, costruito insieme.</span><a href="#top">Torna all'inizio ↑</a></div>
+    </footer>
+  </div>
+
+  <dialog class="booking-dialog" id="booking-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-head"><div><div class="eyebrow">RICHIESTA DI LEZIONE</div><h2 id="dialog-title">Costruiamo il tuo percorso.</h2><p>Compila i campi: la data e l'ora sono preferenze e saranno confermate manualmente.</p></div><button type="button" class="dialog-close" data-close-booking aria-label="Chiudi il modulo">×</button></div>
+    <form id="booking-form">
+      <div class="form-grid">
+        <label class="field field-full">Nome dello studente<input name="studentFirstName" autocomplete="given-name" maxlength="80" required placeholder="Es. Giulia"></label>
+        <label class="field field-full">Email del genitore o cliente adulto<input name="customerEmail" type="email" autocomplete="email" maxlength="254" required placeholder="nome@esempio.it"></label>
+        <label class="field">Materia<select name="subject" required><option value="">Scegli una materia</option><option>Italiano</option><option>Storia</option><option>Inglese</option><option>Informatica</option><option>Matematica</option></select></label>
+        <label class="field">Livello scolastico<select name="schoolLevel" required><option value="">Scegli il livello</option><option value="medie">Scuola media</option><option value="superiori">Scuola superiore</option></select></label>
+        <label class="field">Formato preferito<select name="lessonFormat" id="lesson-format" required><option value="online">Online (da confermare)</option><option value="in_person" disabled>In presenza (non ancora attivata)</option></select><small class="field-hint" id="format-hint">La disponibilità del formato sarà confermata manualmente.</small></label>
+        <label class="field">Pacchetto<select name="packageKey" id="package-select" required><option value="single">Lezione singola — 15 €</option><option value="pack5">5 lezioni — 69 €</option><option value="pack10">10 lezioni — 129 €</option><option value="pack20">20 lezioni — 239 €</option></select></label>
+        <label class="field">Data preferita<input name="preferredDate" id="preferred-date" type="date" required></label>
+        <label class="field">Orario preferito<input name="preferredTime" type="time" required><small class="field-hint">Non sono mostrati slot in tempo reale.</small></label>
+        <label class="field field-full check-field"><input name="privacyAcknowledged" type="checkbox" required><span>Confermo di aver letto l'<a href="privacy-policy.html">informativa privacy</a>. Per uno studente minorenne, il contatto è fornito da un genitore o da un adulto autorizzato.</span></label>
+        <label class="field field-full check-field"><input name="termsAccepted" type="checkbox" required><span>Accetto le <a href="condizioni-e-cancellazioni.html">condizioni di acquisto e prenotazione</a>, inclusa la conferma manuale di data e orario.</span></label>
+      </div>
+      <div class="checkout-summary" aria-live="polite"><span>Totale da pagare</span><strong id="checkout-total">15 €</strong><small id="checkout-detail">1 lezione · 60 minuti</small></div>
+      <p class="form-disclaimer">ATTENZIONE: IL PAGAMENTO SI APRE SU STRIPE. L'EMAIL VIENE PRECOMPILATA, MA MATERIA, LIVELLO, FORMATO E PREFERENZE DI DATA/ORA INSERITI QUI NON VENGONO TRASFERITI AL CHECKOUT. DOPO IL PAGAMENTO DOVRAI CONCORDARE QUESTI DETTAGLI DIRETTAMENTE CON IL TUTOR. LA RICHIESTA NON CONFERMA AUTOMATICAMENTE L'APPUNTAMENTO.</p>
+      <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+      <div class="dialog-actions"><button class="button button-primary button-full" type="submit" id="checkout-button">Continua al pagamento sicuro <span aria-hidden="true">↗</span></button><button class="button button-text button-full" type="button" data-close-booking>Continua più tardi</button></div>
+    </form>
+  </dialog>
+  <script>
+
+(() => {
+  'use strict';
+  const prices = {
+    single: { total: '15 €', credits: 1, unit: '15,00 € a lezione' },
+    pack5: { total: '69 €', credits: 5, unit: '13,80 € a lezione · risparmi 6 €' },
+    pack10: { total: '129 €', credits: 10, unit: '12,90 € a lezione · risparmi 21 €' },
+    pack20: { total: '239 €', credits: 20, unit: '11,95 € a lezione · risparmi 61 €' }
+  };
+  const paymentLinks = {
+    single: 'https://buy.stripe.com/8x24gAgdN485dnd0OY8so00',
+    pack5: 'https://buy.stripe.com/3cI3cw6Dd8ol5ULbtC8so01',
+    pack10: 'https://buy.stripe.com/00w00kbXxcEB1Ev41a8so02',
+    pack20: 'https://buy.stripe.com/9B66oI3r1341ab141a8so03'
+  };
+  const $ = id => document.getElementById(id);
+  const dialog = $('booking-dialog');
+  const form = $('booking-form');
+  const packageSelect = $('package-select');
+  const message = $('form-message');
+  function setMessage(text) { if (message) message.textContent = text; }
+  function updateTotal() {
+    const item = prices[packageSelect?.value] || prices.single;
+    if ($('checkout-total')) $('checkout-total').textContent = item.total;
+    if ($('checkout-detail')) $('checkout-detail').textContent = `${item.credits} ${item.credits === 1 ? 'lezione' : 'lezioni'} · 60 minuti ciascuna · ${item.unit}`;
+  }
+  function openBooking(button) {
+    if (!dialog) return;
+    setMessage('');
+    if (button.dataset.package && prices[button.dataset.package]) packageSelect.value = button.dataset.package;
+    if (button.dataset.subject && form.elements.subject) form.elements.subject.value = button.dataset.subject;
+    const activeLevel = document.querySelector('.level-button.is-active')?.dataset.level;
+    if (activeLevel && form.elements.schoolLevel) form.elements.schoolLevel.value = activeLevel;
+    const today = new Date(); today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+    if ($('preferred-date')) $('preferred-date').min = today.toISOString().slice(0,10);
+    updateTotal();
+    dialog.showModal();
+  }
+  document.querySelectorAll('[data-open-booking]').forEach(button => button.addEventListener('click', event => {
+    event.preventDefault(); openBooking(button);
+    $('main-nav')?.classList.remove('is-open');
+    document.querySelector('.nav-toggle')?.setAttribute('aria-expanded', 'false');
+  }));
+  document.querySelectorAll('[data-close-booking]').forEach(button => button.addEventListener('click', () => dialog?.close()));
+  dialog?.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  packageSelect?.addEventListener('change', updateTotal);
+  document.querySelector('.nav-toggle')?.addEventListener('click', () => {
+    const nav = $('main-nav'); const toggle = document.querySelector('.nav-toggle');
+    const opened = nav.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', String(opened));
+  });
+  const schoolCopy = {
+    medie: ['Aritmetica, frazioni, proporzioni e problemi spiegati passo dopo passo.', 'Percorso per la scuola media: partiamo dalle basi e costruiamo sicurezza con esercizi guidati.'],
+    superiori: ['Aritmetica, algebra, equazioni, funzioni e problemi risolti passo dopo passo, secondo il tuo indirizzo.', 'Percorso per la scuola superiore: lavoriamo su teoria, esercizi e argomenti del tuo programma.']
+  };
+  document.querySelectorAll('[data-level]').forEach(button => button.addEventListener('click', () => {
+    document.querySelectorAll('[data-level]').forEach(other => {
+      const active = other === button; other.classList.toggle('is-active', active); other.setAttribute('aria-pressed', String(active));
+    });
+    const data = schoolCopy[button.dataset.level];
+    document.querySelectorAll('[data-copy="math"]').forEach(node => node.textContent = data[0]);
+    if ($('level-note')) $('level-note').textContent = data[1];
+    if (form?.elements.schoolLevel) form.elements.schoolLevel.value = button.dataset.level;
+  }));
+  document.querySelectorAll('.faq-list details').forEach(detail => { detail.open = true; });
+  const shell = document.querySelector('.site-shell');
+  const viewTitles = {
+    home: 'ZFIERIZ | Ripetizioni personalizzate per medie e superiori',
+    'area-clienti': 'Area clienti | ZFIERIZ'
+  };
+  function showPage(view, pushState = true) {
+    const allowed = Object.keys(viewTitles);
+    const nextView = allowed.includes(view) ? view : 'home';
+    shell.dataset.view = nextView;
+    document.title = viewTitles[nextView];
+    if (pushState) {
+      const nextUrl = nextView === 'home' ? `${location.pathname}${location.search}` : `#${nextView}`;
+      history.pushState({ view: nextView }, '', nextUrl);
+    }
+    if (dialog?.open) dialog.close();
+    window.scrollTo(0, 0);
+  }
+  document.querySelectorAll('[data-page-link]').forEach(link => link.addEventListener('click', event => {
+    event.preventDefault(); showPage(link.dataset.pageLink);
+  }));
+  document.querySelectorAll('[data-home-link]').forEach(link => link.addEventListener('click', event => {
+    event.preventDefault(); showPage('home');
+  }));
+  window.addEventListener('popstate', event => {
+    const hashView = location.hash.slice(1);
+    showPage(event.state?.view || hashView, false);
+  });
+  const initialView = location.hash.slice(1);
+  if (Object.keys(viewTitles).includes(initialView) && initialView !== 'home') showPage(initialView, false);
+  form?.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const formData = new FormData(form);
+    const email = String(formData.get('customerEmail') || '').trim();
+    const packageKey = String(formData.get('packageKey') || '');
+    const paymentUrl = paymentLinks[packageKey];
+    if (!paymentUrl) {
+      setMessage('PACCHETTO NON DISPONIBILE. SELEZIONA NUOVAMENTE IL PACCHETTO E RIPROVA.');
+      return;
+    }
+    const checkoutButton = $('checkout-button');
+    if (checkoutButton) {
+      checkoutButton.disabled = true;
+      checkoutButton.textContent = 'COLLEGAMENTO A STRIPE…';
+    }
+    const checkoutUrl = new URL(paymentUrl);
+    checkoutUrl.searchParams.set('prefilled_email', email);
+    window.location.assign(checkoutUrl.toString());
+  });
+  const year = $('year'); if (year) year.textContent = String(new Date().getFullYear());
+  document.querySelectorAll('[data-contact-display]').forEach(node => node.textContent = 'Contatti da configurare prima del lancio.');
+})();
+
+  </script>
+
+<!--sites-preview-theme:start-->
+<style data-sites-preview-theme>:root{--site-primary:light-dark(#000000,#fff) !important;--site-on-primary:light-dark(#ffffff,#000) !important;--site-secondary:light-dark(#ffffff,#000) !important;--site-on-secondary:light-dark(#000000,#fff) !important;--site-background:light-dark(#ffffff,#000) !important;--site-on-background:light-dark(#000000,#fff) !important;--site-spacing-scale:1.25 !important;--site-radius-scale:0.5 !important;--site-font-body:system-ui,sans-serif !important;--site-font-heading:system-ui,sans-serif !important;--site-decoration-opacity:0 !important;--site-heading-scale:0.9 !important}
+:root {}
+* {}
+html {}
+body {}
+button, input, select {}
+button, a, summary, input, select {}
+a {}
+button {}
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible {}
+.site-shell {}
+.wrap {}
+.section {}
+.site-header {}
+.header-inner {}
+.brand {}
+.brand-mark {}
+.brand-mark span {}
+.brand-mark span:nth-child(1) {}
+.brand-mark span:nth-child(2) {}
+.brand-mark span:nth-child(3) {}
+.brand-name {}
+.brand-subtitle {}
+.main-nav {}
+.main-nav > a {}
+.main-nav > a:hover, .footer-links a:hover {}
+.nav-toggle {}
+.ticker {}
+.ticker-track {}
+.ticker-track b {}
+
+.hero {}
+.eyebrow {}
+.eyebrow-dot {}
+h1, h2, h3, p {}
+h1, h2, h3 {}
+h1 {}
+h1 span, .section-heading h2 span, .method-intro h2 span, .booking-band h2 span, .faq-section h2 span {}
+.hero-lede {}
+.hero-actions {}
+.button {}
+.button:hover {}
+.button-primary {}
+.button-primary:hover {}
+.button-secondary, .button-outline {}
+.button-secondary:hover, .button-outline:hover {}
+.button-small {}
+.button-light {}
+.button-light:hover {}
+.button-full {}
+.button-text {}
+.hero-price {}
+.price-icon {}
+.hero-price strong, .hero-price small {}
+.hero-price strong {}
+.hero-price small {}
+.hero-visual {}
+.hero-visual::before {}
+.hero-visual::after {}
+.visual-glow {}
+.visual-topline, .visual-foot {}
+.visual-live {}
+.visual-live i {}
+.study-sheet {}
+.sheet-head {}
+.sheet-tag {}
+.sheet-index {}
+.sheet-question {}
+.equation {}
+.equation-step {}
+.equation-step > span:first-child {}
+.step-check {}
+.equation-final {}
+.sheet-note {}
+.note-sparkle {}
+.sheet-note b, .sheet-note small {}
+.sheet-note b {}
+.sheet-note small {}
+.floating-note {}
+.floating-note b, .floating-note small {}
+.floating-note b {}
+.floating-note small {}
+.note-symbol {}
+.note-symbol-light {}
+.note-one {}
+.note-two {}
+.visual-foot {}
+.quick-facts {}
+.facts-grid {}
+.fact {}
+.fact:first-child {}
+.fact-icon {}
+.fact strong, .fact small {}
+.fact strong {}
+.fact small {}
+.section-heading {}
+.section-heading-split {}
+.section-heading h2, .method-intro h2, .booking-band h2 {}
+.section-heading > p, .section-heading-split > p {}
+.level-switch {}
+.switch-label {}
+.level-button {}
+.level-button:hover {}
+.level-button.is-active {}
+.subjects-grid {}
+.subject-card {}
+.subject-card:hover {}
+.subject-top {}
+.subject-number {}
+.subject-symbol {}
+.subject-italian .subject-symbol {}
+.subject-english .subject-symbol {}
+.subject-history .subject-symbol {}
+.subject-tech .subject-symbol {}
+.subject-card h3 {}
+.subject-card p {}
+.text-link {}
+.text-link span {}
+.text-link:hover span {}
+.level-note {}
+.method-section {}
+.method-section::before {}
+.method-layout {}
+.eyebrow-light {}
+.method-intro h2 {}
+.method-intro h2 span {}
+.method-intro p {}
+.method-steps {}
+.method-step {}
+.step-number {}
+.method-step h3 {}
+.method-step p {}
+.step-arrow {}
+.pricing-section {}
+.pricing-grid {}
+.price-card {}
+.price-card-featured {}
+.featured-label {}
+.price-card-head {}
+.price-kicker {}
+.price-count {}
+.price-card h3 {}
+.price-description {}
+.price-amount {}
+.price-amount strong {}
+.price-amount span {}
+.per-lesson {}
+.per-lesson span {}
+.price-features {}
+.price-features li {}
+.price-features li::before {}
+.price-card .button {}
+.pricing-note {}
+.pricing-note span {}
+.booking-band {}
+.booking-band-inner {}
+.booking-band h2 {}
+.booking-band p {}
+.booking-band .eyebrow {}
+.booking-band .button {}
+.faq-section {}
+.faq-section .section-heading {}
+.faq-list {}
+.faq-list details {}
+.faq-list summary {}
+.faq-list summary::-webkit-details-marker {}
+.faq-list summary span {}
+.faq-list details[open] summary span {}
+.faq-list details p {}
+.site-footer {}
+.footer-main {}
+.brand-footer .brand-name {}
+.footer-brand-col > p {}
+.footer-links h3, .footer-contact h3 {}
+.footer-links a {}
+.footer-contact p {}
+.footer-contact .text-link {}
+.footer-bottom {}
+.footer-bottom a {}
+.booking-dialog {}
+.booking-dialog::backdrop {}
+.dialog-head {}
+.dialog-head h2 {}
+.dialog-head p {}
+.dialog-close {}
+#booking-form {}
+.form-grid {}
+.field {}
+.field-full {}
+.field input:not([type="checkbox"]), .field select {}
+.field input::placeholder {}
+.field select:disabled {}
+.field-hint {}
+.check-field {}
+.check-field input {}
+.check-field a {}
+.checkout-summary {}
+.checkout-summary > span {}
+.checkout-summary strong {}
+.checkout-summary small {}
+.checkout-summary small {}
+.form-disclaimer {}
+.form-message {}
+.form-message.is-success {}
+.form-message:empty {}
+.dialog-actions {}
+.document-page {}
+.document-page .document-copy {}
+.document-copy h1 {}
+.document-copy h2 {}
+.document-copy p, .document-copy li {}
+.document-notice {}
+.status-panel {}
+.status-mark {}
+.status-panel h2 {}
+.status-panel p {}
+.status-detail {}
+@media (max-width: 1100px) {.hero {}
+h1 {}
+.hero-visual {}
+.study-sheet {}
+.method-layout {}
+.pricing-grid {}
+.price-card {}
+.featured-label {}
+.price-description {}
+.price-card .button {}}
+@media (max-width: 800px) {.wrap {}
+.section {}
+.header-inner {}
+.nav-toggle {}
+.main-nav {}
+.main-nav.is-open {}
+.main-nav > a {}
+.main-nav .button {}
+.brand-name {}
+.hero {}
+.hero-copy {}
+h1 {}
+.hero-visual {}
+.facts-grid {}
+.fact:nth-child(3) {}
+.section-heading-split {}
+.section-heading-split > p {}
+.subjects-grid {}
+.subject-card:last-child {}
+.method-layout {}
+.method-intro p {}
+.booking-band-inner {}
+.footer-main {}
+.footer-bottom {}}
+@media (max-width: 520px) {.wrap {}
+.brand {}
+.brand-mark {}
+.brand-name {}
+.brand-subtitle {}
+.ticker-track {}
+.ticker-track b {}
+.hero {}
+h1 {}
+.hero-lede {}
+.hero-actions {}
+.hero-actions .button {}
+.hero-price {}
+.hero-visual {}
+.visual-topline {}
+.visual-live {}
+.study-sheet {}
+.equation {}
+.note-one {}
+.note-two {}
+.visual-foot {}
+.facts-grid {}
+.fact {}
+.fact-icon {}
+.fact strong {}
+.fact small {}
+.section {}
+.section-heading {}
+.section-heading h2, .method-intro h2 {}
+.section-heading-split > p {}
+.level-switch {}
+.switch-label {}
+.level-button {}
+.subjects-grid {}
+.subject-card, .subject-card:last-child {}
+.subject-top {}
+.method-section {}
+.method-step {}
+.method-step h3 {}
+.method-step p {}
+.pricing-grid {}
+.price-card {}
+.featured-label {}
+.price-card h3 {}
+.price-description {}
+.price-amount strong {}
+.price-features li {}
+.price-card .button {}
+.pricing-note {}
+.booking-band {}
+.booking-band h2 {}
+.booking-band p {}
+.faq-list summary {}
+.faq-list details p {}
+.footer-main {}
+.footer-brand-col {}
+.footer-bottom {}
+.footer-bottom span:nth-child(2) {}
+.dialog-head {}
+.dialog-head h2 {}
+#booking-form {}
+.form-grid {}
+.field-full {}
+.document-page {}
+.status-panel {}}
+@media (prefers-reduced-motion: reduce) {*, ::before, ::after {}}
+:root {}
+body {}
+.site-shell {}
+h1, h2, h3 {}
+.button-primary {}
+.method-section, .site-footer {}
+.hero-visual::before, .hero-visual::after, .visual-glow, .method-section::before {}
+h1 {}
+.section-heading h2, .method-intro h2 {}
+.section {}
+.hero {}
+.subject-card {}
+.price-card {}
+.booking-dialog {}
+@media (max-width: 1100px) {.hero {}}
+@media (max-width: 800px) {.section {}
+.hero {}
+h1 {}}
+@media (max-width: 520px) {.section {}
+.hero {}
+h1 {}
+.section-heading h2, .method-intro h2 {}}
+:root {}
+body {}
+.wrap {}
+.site-header {}
+.header-inner {}
+.main-nav {}
+.ticker {}
+.ticker-track {}
+.hero {}
+h1 {}
+.hero-lede {}
+.button {}
+.button-primary {}
+.button-primary:hover {}
+.hero-visual {}
+.hero-visual::before {}
+.hero-visual::after {}
+.visual-glow {}
+.study-sheet {}
+.floating-note {}
+.quick-facts {}
+.subject-card {}
+.subject-card:hover {}
+.method-section {}
+.method-section::before {}
+.method-intro p, .method-step p {}
+.method-step {}
+.method-step h3 {}
+.step-number, .step-arrow {}
+.eyebrow-light {}
+.method-intro h2 span {}
+.method-intro .button-light {}
+.pricing-grid {}
+.price-card {}
+.price-card-featured {}
+.featured-label {}
+.booking-band {}
+.booking-band p {}
+.booking-band .eyebrow {}
+.booking-band .button-light {}
+.booking-band .button-light:hover {}
+.faq-section {}
+.faq-section .section-heading {}
+.faq-list {}
+.faq-list details {}
+.faq-list summary {}
+.faq-list details p {}
+.faq-list details[open] summary span {}
+.faq-list details[open] summary span::after {}
+.resources-section {}
+.resources-section .section-heading {}
+.resources-grid {}
+.resource-card {}
+.resource-label {}
+.resource-card h3 {}
+.resource-card p {}
+.resource-card strong {}
+.footer-main {}
+.document-copy p, .document-copy li {}
+@media (max-width: 800px) {.wrap {}
+.resources-grid {}
+.hero {}
+.method-section {}}
+@media (max-width: 520px) {.wrap {}
+h1 {}
+.hero-visual {}
+.faq-list summary {}
+.faq-list details p {}}
+.site-header {}
+.site-header .brand-name, .site-header .main-nav, .site-header .main-nav a, .site-header .nav-toggle {}
+.site-header .brand-subtitle {}
+.quick-facts, .subject-card, .price-card, .booking-dialog, .status-panel, .study-sheet {}
+.fact strong, .subject-card h3, .price-card h3, .price-amount strong {}
+.price-card .price-kicker, .price-card .price-description, .price-card .per-lesson, .price-card .price-features li, .price-amount span {}
+.price-amount strong {}
+.section-heading h2, .section-heading-split > p, .resource-card h3, .resource-card p {}
+.section-heading h2 {}
+.section-heading-split > p {}
+.resources-section {}
+.resource-card h3 {}
+.resource-card p {}
+.resource-card strong {}
+.faq-section {}
+.faq-list {}
+.faq-list details {}
+.faq-list summary {}
+.faq-list details p {}
+.document-page {}
+.document-copy p, .document-copy li {}
+@media (max-width: 800px) {.faq-section > .wrap {}}
+@media (max-width: 520px) {.faq-section > .wrap {}
+.price-amount strong {}}
+.secondary-page {}
+.site-shell:not([data-view="home"]) main > section:not(.secondary-page) {}
+.site-shell[data-view="privacy"] #privacy-page, .site-shell[data-view="termini"] #termini-page, .site-shell[data-view="area-clienti"] #area-clienti-page {}
+.secondary-page {}
+.secondary-page .document-copy {}
+.secondary-page .document-copy h1 {}
+.secondary-page .document-copy h2 {}
+.secondary-page .document-copy p, .secondary-page .document-copy li {}
+.secondary-page .document-copy ul {}
+.secondary-page .document-copy a {}
+.page-notice {}
+.page-actions {}
+@media (max-width: 520px) {.secondary-page .document-copy {}
+.secondary-page .document-copy p, .secondary-page .document-copy li {}}
+html,body{background-color:light-dark(#fff,#000) !important;color:light-dark(#000,#fff) !important}</style>
+<script type="application/json" data-sites-preview-theme>{"appearance":"simple","primary":"#000000","secondary":"#ffffff","background":"#ffffff","typography":"modern","spacing":1.25,"roundness":0.5,"headingScale":0.9,"decorationOpacity":0}</script>
+<!--sites-preview-theme:end-->
+
+<style id="zfieriz-final-black-white">
+:root{color-scheme:light!important;--ink:#111!important;--ink-soft:#444!important;--muted:#666!important;--blue:#111!important;--blue-dark:#000!important;--blue-pale:#eee!important;--paper:#fff!important;--line:#ddd!important;--navy:#111!important;--mint:#ddd!important;--site-primary:#111!important;--site-on-primary:#fff!important;--site-secondary:#111!important;--site-on-secondary:#fff!important;--site-background:#fff!important;--site-on-background:#111!important}
+html,body,.site-shell,main{color-scheme:light!important;background:#fff!important;color:#111!important}
+.site-shell>main>section:not(.method-section):not(.booking-band){background:#fff!important;color:#111!important}
+.site-header,.quick-facts,.faq-section,.resources-section,.pricing-section,.subject-card,.price-card,.booking-dialog,.secondary-page,.secondary-page .document-copy{background:#fff!important;color:#111!important}
+.site-header,.site-header .brand-name,.site-header .brand-subtitle,.site-header .main-nav,.site-header .main-nav a,.site-header .nav-toggle{color:#111!important}
+.brand-mark,.brand-mark span,.brand-mark span:nth-child(1),.brand-mark span:nth-child(2),.brand-mark span:nth-child(3){background:#111!important}
+.ticker{background:#eee!important;color:#444!important;border-color:#ddd!important}
+.ticker-track b,.eyebrow,.eyebrow-dot,.text-link,.resource-label,.price-icon,.price-count,.faq-list summary span{color:#111!important}
+.eyebrow-dot{background:#111!important;box-shadow:0 0 0 4px #eee!important}
+.hero h1,.hero h1 span,.section-heading h2,.section-heading h2 span,.faq-section h2,.faq-section h2 span,.resources-section h2,.resources-section h2 span{color:#111!important}
+.hero-lede,.section-heading>p,.section-heading-split>p,.subject-card p,.price-description,.price-features li,.per-lesson,.faq-list details p,.resource-card p,.document-copy p,.document-copy li{color:#444!important}
+.hero-visual{background:#111!important;color:#fff!important;box-shadow:none!important}
+.hero-visual:before{background:radial-gradient(circle,rgba(255,255,255,.16),transparent 70%)!important}
+.study-sheet{background:#fff!important;color:#111!important}
+.sheet-tag,.note-sparkle,.price-icon,.fact-icon,.subject-symbol{background:#eee!important;color:#111!important}
+.equation,.equation-final,.note-symbol{color:#111!important}.note-symbol{background:#eee!important}
+.level-button{color:#111!important;border-color:#999!important;background:#fff!important}
+.level-button.is-active{background:#111!important;color:#fff!important;border-color:#111!important;box-shadow:none!important}
+.subject-card,.price-card{border-color:#ccc!important;box-shadow:none!important}
+.subject-card:hover{border-color:#777!important;box-shadow:none!important}
+.subject-symbol,.subject-italian .subject-symbol,.subject-english .subject-symbol,.subject-history .subject-symbol,.subject-tech .subject-symbol{background:#eee!important;color:#111!important}
+.method-section,.booking-band,.site-footer{background:#111!important;color:#fff!important}
+.method-intro h2,.method-intro h2 span,.method-intro p,.method-step h3,.method-step p,.step-number,.step-arrow,.booking-band h2,.booking-band p,.booking-band .eyebrow,.site-footer,.site-footer a,.site-footer p,.site-footer h3,.footer-brand-col>p,.footer-links a,.footer-contact p,.footer-contact .text-link,.footer-bottom{color:#fff!important}
+.method-step{border-color:rgba(255,255,255,.22)!important}
+.button-primary,.hero-actions .button-primary,.main-nav .button-primary,.booking-band .button-light,.method-intro .button-light{background:#111!important;color:#fff!important;border:1px solid #111!important;box-shadow:none!important}
+.button-primary:hover,.booking-band .button-light:hover,.method-intro .button-light:hover{background:#333!important;color:#fff!important}
+.button-secondary,.button-outline,.hero-actions .button-secondary{background:#fff!important;color:#111!important;border:1px solid #111!important}
+.button-secondary:hover,.button-outline:hover,.hero-actions .button-secondary:hover{background:#111!important;color:#fff!important;border-color:#111!important}
+.price-card-featured{border-color:#777!important;box-shadow:none!important}.featured-label,.per-lesson span{background:#eee!important;color:#111!important}
+.pricing-grid .price-card .button,.pricing-grid .price-card .button.button-primary{background:#16834a!important;color:#fff!important;border:1px solid #16834a!important;box-shadow:none!important}
+.pricing-grid .price-card .button:hover,.pricing-grid .price-card .button.button-primary:hover{background:#10683a!important;border-color:#10683a!important;color:#fff!important}
+.faq-list,.faq-list details{border-color:#ddd!important}.faq-list summary{color:#111!important}
+.field,.field select,.field input:not([type=checkbox]),.dialog-head,.dialog-head h2,.dialog-head p{color:#111!important;background:#fff!important}
+.field select,.field select:hover,.field select:focus,.field select option,.field select option:checked{color:#111!important;-webkit-text-fill-color:#111!important;background:#fff!important}
+.check-field,.form-disclaimer{color:#444!important}.check-field input{accent-color:#111!important}
+.checkout-summary{background:#eee!important}.checkout-summary>span,.checkout-summary small{color:#444!important}.checkout-summary strong{color:#111!important}
+.secondary-page .document-copy h1,.secondary-page .document-copy h2,.secondary-page .document-copy p,.secondary-page .document-copy li,.secondary-page .document-copy a{color:#111!important}
+.secondary-page .document-copy .page-actions a.button,.secondary-page .document-copy .page-actions a.button.button-primary,.secondary-page .document-copy .page-actions a.button.button-secondary{background:#fff!important;color:#000!important;border:1px solid #000!important;box-shadow:none!important}
+.secondary-page .document-copy .page-actions a.button:hover,.secondary-page .document-copy .page-actions a.button:focus-visible{background:#000!important;color:#fff!important;border-color:#000!important}
+.subject-tech .subject-symbol{width:auto!important;min-width:43px!important;height:43px!important;padding:0 9px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;white-space:nowrap!important;font-family:ui-monospace,SFMono-Regular,Consolas,monospace!important;font-size:10px!important;font-weight:700!important;letter-spacing:-.45px!important;line-height:1!important;background:#eee!important;color:#111!important;border-radius:10px!important}
+</style>
+
+</body>
+</html>
